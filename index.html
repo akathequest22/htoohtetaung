@@ -21,6 +21,12 @@
 
   gtag('config', 'G-88TSH65JBT');
 </script>
+<!-- Redirect HTTP to HTTPS -->
+<script>
+  if (location.protocol !== 'https:') {
+    location.replace(`https://${location.href.split('//')[1]}`);
+  }
+</script>
     <!-- font icons -->
     <link
       rel="stylesheet"
