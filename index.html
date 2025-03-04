@@ -36,15 +36,12 @@
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <!-- Page navigation -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top"
-      data-spy="affix"
-      data-offset-top="0"
-    >
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="assets/imgs/aka logo.png" alt="‌aka logo"
-        /></a>
+        <a class="navbar-brand" href="#">
+          <img src="assets/imgs/aka logo.png" alt="aka logo" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -56,7 +53,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
+    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto align-items-center">
             <li class="nav-item">
@@ -77,18 +74,70 @@
             <li class="nav-item">
               <a class="nav-link" href="#experience">Experience</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="#">Article</a>
+                <a class="dropdown-item" href="#">Vacancy</a>
+                <a class="dropdown-item" href="#">Test 3</a>
+              </div>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="- btn btn-primary rounded ml-4" href="portfolio.html"
-                >Portfolio</a
-              >
+              <a class="btn btn-primary rounded ml-4" href="portfolio.html">Portfolio</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    
+    <style>
+      /* Custom CSS for the dropdown menu */
+      .dropdown-menu {
+        background-color: rgba(255, 255, 255, 0.4); /* White with 40% opacity */
+        border: none;
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 0;
+        opacity: 0; /* Initially hidden */
+        visibility: hidden; /* Initially hidden */
+        transform: translateY(-10px); /* Start slightly above */
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+      }
+    
+      .dropdown-item {
+        color: #333; /* Dark text color */
+        padding: 10px 20px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+    
+      .dropdown-item:hover {
+        background-color: rgba(0, 0, 0, 0.1); /* Light hover effect */
+        color: #000; /* Darker text color on hover */
+        border-radius: 5px; /* Rounded corners for hover effect */
+      }
+    
+      .nav-item.dropdown:hover .dropdown-menu {
+        opacity: 1; /* Show dropdown */
+        visibility: visible; /* Show dropdown */
+        transform: translateY(0); /* Move to final position */
+      }
+    
+      .nav-link.dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
+      }
+    </style>
     <!-- End of page navibation -->
 
     <!-- Page Header -->
@@ -527,29 +576,40 @@
                 <div class="container">
                     <div class="row justify-content-center g-4">
                         <div class="col-2">
+                          <a href="https://citicommyanmar.com/" target="_blank">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/Citicom.jpeg" alt="Logo 1">
+                                <img src="assets/imgs/Partners Logo/Citicom.jpeg" alt="Citicom Myanmar"></a>
+                                
                             </div>
                         </div>
                         <div class="col-2">
-                            <div class="partner-logo">
+                          <a href="https://www.crotontravel.com" target="_blank"><div class="partner-logo">
                                 <img src="assets/imgs/Partners Logo/Croton logo PNG big size.webp" alt="Logo 2">
-                            </div>
+                                
+                            </div></a>
                         </div>
                         <div class="col-2">
+                          <a href="https://goldsteelconstruction.com/" target="_blank">
                             <div class="partner-logo">
                                 <img src="assets/imgs/Partners Logo/Gold Steel Construction.png" alt="Logo 3">
-                            </div>
+                                
+                            </div></a>
                         </div>
                         <div class="col-2">
+                          <a href="https://www.grandroyal-group.com/" target="_blank">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/GRG.jpg" alt="Logo 4">
-                            </div>
+                                <img src="assets/imgs/Partners Logo/GRG.jpg" alt="Grand Royal Whisky">
+                                
+
+                            </div></a>
                         </div>
                         <div class="col-2">
+                          <a href="https://www.zlann.com.mm" target="_blank">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/Zlann.jpeg" alt="Logo 5">
-                            </div>
+                                <img src="assets/imgs/Partners Logo/Zlann.jpeg" alt="Zlann Podcasts">
+                                
+
+                            </div></a>
                         </div>
                     </div>
                 </div>
@@ -561,27 +621,36 @@
                     <div class="row justify-content-center g-4">
                         <div class="col-2">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/HIS.png" alt="Logo 6">
+                                <img src="assets/imgs/Partners Logo/HIS.png" alt="HIS Travel">
+                                <a href="https://www.his-j.com" target="_blank"></a>
+
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/KMD.jpeg" alt="Logo 7">
+                                <img src="assets/imgs/Partners Logo/KMD.jpeg" alt="KMD">
+                                <a href="https://www.kmd.edu.mm" target="_blank"></a>
+
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/MI Radio.jpeg" alt="Logo 8">
+                                <img src="assets/imgs/Partners Logo/MI Radio.jpeg" alt="MI Radio Myanmar">
+                                <a href="https://www.miradio.com.mm" target="_blank"></a>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/Tour Mandalay.jpeg" alt="Logo 9">
+                                <img src="assets/imgs/Partners Logo/Tour Mandalay.jpeg" alt="Tour Mandalay Travel Tour">
+                                <a href="https://www.tourmandalay.travel" target="_blank"></a>
+
+
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/Racha Chang.png" alt="Logo 10">
+                                <img src="assets/imgs/Partners Logo/Racha Chang.png" alt="Racha Chang Myanmar">
+                                <a href="https://www.facebook.com/RachaChangEngine" target="_blank"></a>
                             </div>
                         </div>
                     </div>
@@ -594,27 +663,35 @@
                     <div class="row justify-content-center g-4">
                         <div class="col-2">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/Tharaphu Soe Myint.jpeg" alt="Logo 11">
+                                <img src="assets/imgs/Partners Logo/Tharaphu Soe Myint.jpeg" alt="Tharaphu Soe Myint Group of Co.,Ltd">
+                                <a href="https://www.facebook.com/trpsoemyint/" target="_blank"></a>
+
+
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/Avatr_Technology_Logo.png" alt="Logo 12">
+                                <img src="assets/imgs/Partners Logo/Avatr_Technology_Logo.png" alt="Avatr Technology Car EV">
+                                <a href="https://www.facebook.com/profile.php?id=61557191326273" target="_blank"></a>
+
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/Locofast.webp" alt="Logo 13">
+                                <img src="assets/imgs/Partners Logo/Locofast.webp" alt="Locofast Textile">
+                                 <a href="https://locofast.com/" target="_blank"></a>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/Viscose Staple Fibre (VSF).webp" alt="Logo 14">
+                                <img src="assets/imgs/Partners Logo/Viscose Staple Fibre (VSF).webp" alt="Viscose Staple Fibre">
+                                <a href="https://www.jiangnantextiles.com/" target="_blank"></a>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/GGear-Group_.webp" alt="Logo 15">
+                                <img src="assets/imgs/Partners Logo/GGear-Group_.webp" alt="GGear Group">
+                                <a href="https://www.ggear.com.kh/" target="_blank"></a>
                             </div>
                         </div>
                     </div>
@@ -627,7 +704,9 @@
                     <div class="row justify-content-center g-4">
                         <div class="col-2">
                             <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/Golden KBC Empire Group Co.,Ltd.jpg" alt="Logo 16">
+                                <img src="assets/imgs/Partners Logo/Golden KBC Empire Group Co.,Ltd.jpg" alt="Golden KBC Empire Group Co.,Ltd">
+                                <a href="https://www.facebook.com/profile.php?id=100088670024194" target="_blank"></a>
+
                             </div>
                         </div>
                         <div class="col-2">
@@ -899,7 +978,7 @@
                       <div class="card-body text-center">
                           <div class="d-flex flex-column align-items-center">
                               <img src="assets/imgs/Monnect Group of Co.,Ltd.png" class="company-logo" alt="Monnect Group">
-                              <a href="#" class="company-link fw-bold">Monnect Group Co.,Ltd</a>
+                              <a href="https://monnectgroup.com.mm" class="company-link fw-bold">Monnect Group Co.,Ltd</a>
                           </div>
                           <div class="job-details">
                               <div class="card-title fw-bolder">Digital Marketing Manager</div>
@@ -924,7 +1003,7 @@
                       <div class="card-body text-center">
                           <div class="d-flex flex-column align-items-center">
                               <img src="assets/imgs/Brand Diary Branding and Marketing Agency.jpg" class="company-logo" alt="Brand Diary">
-                              <a href="#" class="company-link fw-bold">Brand Diary Agency</a>
+                              <a href="https://brand-diary.com" class="company-link fw-bold">Brand Diary Agency</a>
                           </div>
                           <div class="job-details">
                               <div class="card-title fw-bolder">Key Account Project Manager</div>
