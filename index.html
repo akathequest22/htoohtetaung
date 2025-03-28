@@ -1213,14 +1213,14 @@
         </div>
     
         <div class="row align-items-stretch"> <!-- Ensure equal height for both columns -->
-          <!-- Left Side: Contact Form -->
           <div class="col-md-6">
-            <div class="contact text-left h-100" style="height: 700px;"> <!-- Set height to 700px -->
-              <div class="form h-100 d-flex flex-column justify-content-between"> <!-- Flexbox for equal height -->
+            <div class="contact text-left h-100" style="height: 700px;">
+              <div class="form h-100 d-flex flex-column justify-content-between">
                 <div>
                   <h6 class="subtitle">Contact Me</h6>
                   <h6 class="section-title mb-4">Let's Connect and Collaborate!</h6>
-                  <form action="submit_contact.php" method="post">
+                  
+                  <form id="contactForm" action="https://formspree.io/f/mvgkbzzn" method="post">
                     <div class="form-group">
                       <input type="text" class="form-control" name="name" placeholder="Name" required />
                     </div>
@@ -1233,12 +1233,62 @@
                     <div class="form-group">
                       <textarea name="message" cols="30" rows="5" class="form-control" placeholder="Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
+                    <button type="submit" id="submitBtn" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
                   </form>
                 </div>
               </div>
             </div>
           </div>
+          
+          <script>
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+              e.preventDefault(); // Prevent the default form submission
+              
+              const form = e.target;
+              const formData = new FormData(form);
+              const submitBtn = document.getElementById('submitBtn');
+              
+              // Store original button state
+              const originalText = submitBtn.innerHTML;
+              const originalClass = submitBtn.className;
+              
+              // Disable button and show loading state
+              submitBtn.disabled = true;
+              submitBtn.innerHTML = 'Sending...';
+              
+              fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                  'Accept': 'application/json'
+                }
+              })
+              .then(response => {
+                if (response.ok) {
+                  // Change to success state (green with "DONE")
+                  submitBtn.innerHTML = 'DONE';
+                  submitBtn.className = originalClass.replace('btn-primary', 'btn-success');
+                  
+                  // Reset after 5 seconds
+                  setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.className = originalClass;
+                    submitBtn.disabled = false;
+                  }, 5000);
+                } else {
+                  throw new Error('Form submission failed');
+                }
+              })
+              .catch(error => {
+                console.error('Error:', error);
+                // Reset button on error
+                submitBtn.innerHTML = originalText;
+                submitBtn.className = originalClass;
+                submitBtn.disabled = false;
+                alert('There was a problem submitting your form. Please try again.');
+              });
+            });
+          </script>
     
           <!-- Right Side: Contact Info, GIF, and Map -->
           <div class="col-md-6">
@@ -1274,7 +1324,9 @@
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0431405748172!2d104.9163723759043!3d11.54876314447152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951ec19f2b9bf%3A0x333a57ff54575d02!2sCondo%2055!5e0!3m2!1sen!2skh!4v1740650879668!5m2!1sen!2skh"
                   width="100%"
-                  height="300" <!-- Adjusted height for better balance -->
+                  height="300" 
+                  
+                  <!-- Adjusted height for better balance -->
                   style="border: 0; border-radius: 10px;"
                   allowfullscreen=""
                   loading="lazy"
