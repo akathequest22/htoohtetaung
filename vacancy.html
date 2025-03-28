@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="I'm a full stack digital marketer with over 7 years of experience..."
+    />
+    <meta name="author" content="Devcrud" />
+    <meta
+      name="facebook-domain-verification"
+      content="23sdtvjc7iegxo9t7qrqqyc5otd57n"
+    />
+    <title>Recommend Job for You | Htoo Htet Aung</title>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/aka logo.png" />
+    <link rel="canonical" href="https://www.htoohtetaung.com/vacancy.html" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-88TSH65JBT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-88TSH65JBT");
+    </script>
+
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css"
+    />
+    <!-- Bootstrap + Steller main styles -->
+    <link rel="stylesheet" href="assets/css/steller.css" />
+
+    <style>
+      /* Navigation styles */
+      .dropdown-menu {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, transform 0.3s;
+      }
+      .nav-item.dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+      }
+      .dropdown-item:hover {
+        background-color: #ff6600;
+        color: white;
+      }
+      .flag-icon {
+        width: auto;
+        height: 40px;
+        border-radius: 50%;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .lang-btn:hover .flag-icon {
+        transform: scale(1.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Vacancy styles */
+      .vacancy-preview-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .vacancy-preview {
+        background: white;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border-left: 3px solid transparent;
+        cursor: pointer;
+        display: flex;
+      }
+
+      .vacancy-preview:hover {
+        border-left-color: #ff6600;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .vacancy-preview .preview-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-right: 15px;
+        flex-shrink: 0;
+      }
+
+      .vacancy-preview .preview-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .vacancy-preview .preview-content {
+        flex: 1;
+      }
+
+      .vacancy-preview .preview-header {
+        margin-bottom: 5px;
+      }
+
+      .vacancy-preview .preview-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 3px;
+      }
+
+      .vacancy-preview .preview-company {
+        font-size: 0.95rem;
+        color: #666;
+      }
+
+      .vacancy-preview .preview-location {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+      }
+
+      .vacancy-preview .preview-bullets {
+        padding-left: 15px;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+      }
+
+      .vacancy-preview .preview-bullets li {
+        margin-bottom: 3px;
+        color: #555;
+      }
+
+      .vacancy-preview .preview-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #888;
+        font-size: 0.85rem;
+      }
+
+      .vacancy-preview .preview-tag {
+        display: inline-block;
+        background: #f0f0f0;
+        color: #ff6600;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        margin-right: 8px;
+      }
+
+      .vacancy-preview .preview-expiry {
+        color: #ff6600;
+        font-weight: 500;
+        font-size: 0.85rem;
+      }
+
+      /* Detailed view styling */
+      .vacancy-detail {
+        display: none;
+        background: white;
+        border-radius: 8px;
+        margin-top: 20px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .vacancy-detail.active {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .vacancy-detail .detail-image {
+        width: 300px;
+        flex-shrink: 0;
+        padding: 20px;
+        background: #f9f9f9;
+      }
+
+      .vacancy-detail .detail-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .vacancy-detail .detail-content {
+        flex: 1;
+        padding: 25px;
+      }
+
+      .vacancy-detail .detail-header {
+        margin-bottom: 20px;
+      }
+
+      .vacancy-detail .detail-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .vacancy-detail .detail-company {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 15px;
+      }
+
+      .vacancy-detail .detail-meta {
+        color: #666;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .vacancy-detail .detail-meta span {
+        display: flex;
+        align-items: center;
+      }
+
+      .vacancy-detail .detail-meta i {
+        margin-right: 5px;
+        color: #ff6600;
+      }
+
+      .vacancy-detail .detail-salary {
+        color: #ff6600;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      .vacancy-detail .detail-section {
+        margin-bottom: 20px;
+      }
+
+      .vacancy-detail .detail-section h5 {
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .vacancy-detail .detail-section ul {
+        padding-left: 20px;
+      }
+
+      .vacancy-detail .detail-section li {
+        margin-bottom: 8px;
+        color: #555;
+      }
+
+      .vacancy-detail .action-buttons {
+        margin-top: 25px;
+      }
+
+      .vacancy-detail .action-buttons .btn {
+        padding: 8px 20px;
+        border-radius: 5px;
+        font-weight: 500;
+        margin-right: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .vacancy-detail.active {
+          flex-direction: column;
+        }
+
+        .vacancy-detail .detail-image {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Page navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      data-spy="affix"
+      data-offset-top="0"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="assets/imgs/aka logo.png" alt="aka logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#partners">My Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feedbacks">Feedbacks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownBlog"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Blog
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="#">Article</a>
+                <a class="dropdown-item" href="/vacancy.html">Vacancy</a>
+                <a class="dropdown-item" href="#">Test 3</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary rounded ml-4" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item language-switcher">
+              <a
+                class="lang-btn"
+                id="lang-en"
+                href="/"
+                onclick="changeLanguage('en')"
+              >
+                <img
+                  src="assets/imgs/Flag-of-Great-Britain-11.png"
+                  class="flag-icon"
+                  alt="English"
+                />
+              </a>
+              |
+              <a
+                class="lang-btn"
+                id="lang-mm"
+                href="/mm.html"
+                onclick="changeLanguage('mm')"
+              >
+                <img
+                  src="assets/imgs/Myanmar-11.png"
+                  class="flag-icon"
+                  alt="Myanmar"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      function changeLanguage(lang) {
+        if (lang === "mm") {
+          document
+            .querySelectorAll(".nav-link, .dropdown-item, .btn")
+            .forEach((el) => {
+              el.textContent = el.getAttribute("data-mm");
+            });
+        } else {
+          document
+            .querySelectorAll(".nav-link, .dropdown-item, .btn")
+            .forEach((el) => {
+              el.textContent = el.getAttribute("data-en");
+            });
+        }
+      }
+    </script>
+
+    <!-- Vacancy Section -->
+    <section id="vacancy" class="section">
+      <div class="container">
+        <h6 class="subtitle">Job opportunities from My Clients</h6>
+        <h6 class="section-title mb-4">Recommed For You</h6>
+
+        <!-- Vacancy Preview Cards Container -->
+        <div class="vacancy-preview-container">
+          <!-- Vacancy Preview 1 -->
+          <div class="vacancy-preview" onclick="showVacancyDetail(1)">
+            <div class="preview-image">
+              <img
+                src="assets/imgs/Partners Logo/Zlann.jpeg"
+                alt="Media Assistant"
+              />
+            </div>
+            <div class="preview-content">
+              <div class="preview-header">
+                <div class="preview-title">Media Assistant (2 Posts)</div>
+                <div class="preview-company">ဇာတ်လမ်း Z-Lann</div>
+              </div>
+              <div>
+                <span class="preview-tag">Video Production</span>
+                <span class="preview-tag">Creative Media</span>
+              </div>
+              <div class="preview-location">
+                <i class="ti-location-pin"></i> Yangon, Myanmar
+              </div>
+              <ul class="preview-bullets">
+                <li>
+                  ရုံးမှတာဝန်ယူထားသော 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 များအတွက် 𝐏𝐨𝐬𝐭
+                  𝐏𝐮𝐛𝐥𝐢𝐬𝐡𝐢𝐧𝐠, 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐏𝐥𝐚𝐧𝐧𝐢𝐧𝐠 𝐚𝐧𝐝 𝐖𝐫𝐢𝐭𝐢𝐧𝐠 နှင့် 𝐒𝐜𝐡𝐞𝐝𝐮𝐥𝐞
+                  ရေးဆွဲခြင်းများ ပြုလုပ်ပေးရမည် ဖြစ်ပြီး သက်ဆိုင်ရာ 𝐑𝐞𝐩𝐨𝐫𝐭
+                  များ၊ 𝐃𝐚𝐭𝐚 𝐑𝐞𝐜𝐨𝐫𝐝 များ ပြုလုပ်ပေးရမှာ ဖြစ်ပါတယ်။
+                </li>
+                <li>
+                  အလုပ်လုပ်ကိုင်ရာတွင် စိတ်ရှည်သည်းခံတတ်ပြီး တက်ကြွစွာဖြင့်
+                  လုပ်ဖော်ကိုင်ဖက်များနှင့် ရင်းနှီးစွာ နေထိုင်ပြောဆိုဆက်ဆံတတ်သူ
+                  ဖြစ်ရမည်ဖြစ်ပြီး ပြင်ပသက်ဆိုင်ရာအဖွဲ့အစည်းများနှင့်
+                  လုပ်ငန်းပိုင်းဆိုင်ရာကိစ္စရပ်များကို ပြောဆိုဆက်ဆံရမည်
+                  ဖြစ်သောကြောင့် 𝐂𝐨𝐦𝐦𝐮𝐧𝐢𝐜𝐚𝐭𝐢𝐨𝐧 နဲ့ 𝐈𝐧𝐭𝐞𝐫𝐩𝐞𝐫𝐬𝐨𝐧𝐚𝐥 𝐒𝐤𝐢𝐥𝐥
+                  ကောင်းမွန်သူ ဖြစ်ရပါမယ်။
+                </li>
+              </ul>
+              <div class="preview-footer">
+                <div>Posted Mar 26 2025</div>
+                <div class="preview-expiry">Active Vacancy</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vacancy Preview 2 -->
+          <div class="vacancy-preview" onclick="showVacancyDetail(2)">
+            <div class="preview-image">
+              <img
+                src="assets/imgs/Partners Logo/MI Radio.jpeg"
+                alt="MI Radio Myanmar"
+              />
+            </div>
+            <div class="preview-content">
+              <div class="preview-header">
+                <div class="preview-title">Program Director</div>
+                <div class="preview-company">MI Radio</div>
+              </div>
+              <div>
+                <span class="preview-tag">Media & Communication</span>
+                <span class="preview-tag">Production</span>
+              </div>
+              <div class="preview-location">
+                <i class="ti-location-pin"></i>Yangon, Myanmar
+              </div>
+              <ul class="preview-bullets">
+                <li>
+                  Program ထုတ်လွှင့်မည့် Channel ပေါ်မှုတည်ပြီး
+                  ပရိသတ်ကြိုက်နှစ်သက်မည့် အစီအစဥ်များကို စီစဥ်နိုင်ပြီး
+                  ရိုက်ကူးရေးအစီအစဥ်အတွက်လိုအပ်သော
+                  ဇာတ်ညွှန်း၊အချိန်ဇယား၊တင်ဆက်ပုံ တို့ကို တာဝန်ယူစီမံပေးရမည်။
+                </li>
+                <li>
+                  ဇာတ်ညွှန်းတည်းဖြတ်၊ ဗီဒီယိုအယ်ဒီတာများနှင့်ချိတ်ဆက်ပြီး
+                  အစီအစဥ်တင်ဆက်ဖော်ပြမည့်ပုံစံကို ညှိုနှိုင်းပြင်ဆင်ရမည်။
+                </li>
+              </ul>
+              <div class="preview-footer">
+                <div>Posted Jan 28 2025</div>
+                <div class="preview-expiry">Active Vacancy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed Vacancy Views (hidden by default) -->
+        <!-- Detail View 1 -->
+        <div id="vacancy-detail-1" class="vacancy-detail">
+          <div class="detail-image">
+            <img
+              src="assets/imgs/ZLann Vacancy Media Assistant.jpg"
+              alt="Media Assistant"
+            />
+          </div>
+          <div class="detail-content">
+            <div class="detail-header">
+              <h2 class="detail-title">Media Assistant (2 Posts)</h2>
+              <div class="detail-company">ဇာတ်လမ်း Z-Lann</div>
+              <div class="detail-meta">
+                <span><i class="ti-location-pin"></i> Yangon, Myanmar</span>
+                <span
+                  ><i class="ti-briefcase"></i> Video Production & Creative
+                  Media</span
+                >
+                <span><i class="ti-time"></i> Full time</span>
+              </div>
+              <div class="detail-salary">
+                <i class="ti-money"></i> Base on experience
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h5>Key Responsibilities:</h5>
+              <ul>
+                <li>
+                  Post Publishing, Content Planning, Content Writing, Report,
+                  Data Record စသည့်လိုအပ်သော media ဆိုင်ရာအလုပ်များကို
+                  သတ်မှတ်ထားသည့် format အတိုင်း အချိန်မီ စီမံပြင်ဆင်နိုင်ရမည်။
+                </li>
+                <li>
+                  ရုံးမှဝန်ဆောင်ယူထားသည့် Social Media platform များအတွက်
+                  monitor media schedules များရေးဆွဲနိုင်ရမည်။
+                </li>
+                <li>
+                  Collaborate with designers, videographers, and content
+                  creators to produce engaging visual content.
+                </li>
+                <li>
+                  ရုံးတွင်းရှိဌာနအသီးသီးမှလုပ်ဖော်ကိုင်ဖက်အပြင်၊
+                  ပြင်ပသက်ဆိုင်ရာအဖွဲ့အစည်းများနှင့်
+                  လုပ်ငန်းပိုင်းဆိုင်ရာကိစ္စရပ်များကို
+                  ပြေပြေလည်လည်ဆက်ဆံပြောဆိုရပါမည်။
+                </li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h5>Requirement:</h5>
+              <ul>
+                <li>
+                  မီဒီယာ၊ကြော်ငြာပိုင်းဆိုင်ရာလုပ်ငန်းခွင်နှင့်ပတ်သတ်သောလုပ်ငန်းအတွေ့အကြုံရှိသူ
+                  ဦးစားပေးမည်။
+                </li>
+                <li>
+                  မြန်မာ၊ အင်္ဂလိပ်ဘာသာစကားနှစ်မျိုးလုံးအား
+                  ကျွမ်းကျင်စွာရေးဖတ်ပြောဆိုနိုင်ရမည်။
+                </li>
+                <li>
+                  အလုပ်လုပ်ကိုင်ရာတွင် စိတ်ရှည်သည်းခံတတ်ပြီး တက်ကြွစွာဖြင့်
+                  လုပ်ဖော်ကိုင်ဖက်များနှင့်
+                  ရင်းနှီးစွာနေထိုင်ပြောဆိုဆက်ဆံတတ်သူဖြစ်ရမည်။
+                </li>
+                <li>
+                  လုပ်ငန်းလိုအပ်ချက်အရ
+                  ရုံးချိန်ပြင်ပနှင့်အစိုးရရုံးပိတ်ရက်တွင်လည်းအလုပ်လုပ်နိုင်သူဖြစ်ရပါမည်။
+                </li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h5>How to apply</h5>
+              <ul>
+                <li>
+                  Send your CV to monnect.adm.hr@gmail.com for your application
+                  📨
+                </li>
+              </ul>
+            </div>
+
+            <div class="action-buttons">
+              <a href="#" class="btn btn-primary">Quick Apply</a>
+              <a
+                href="#"
+                class="btn btn-outline-secondary"
+                onclick="shareOnFacebook()"
+              >
+                Share
+              </a>
+
+              <script>
+                function shareOnFacebook() {
+                  const url = encodeURIComponent(window.location.href);
+                  if (
+                    /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                      navigator.userAgent
+                    )
+                  ) {
+                    // Mobile devices
+                    window.open(`fb://share?u=${url}`, "_blank");
+                  } else {
+                    // Desktop
+                    window.open(
+                      `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+                      "facebook-share-dialog",
+                      "width=626,height=436"
+                    );
+                  }
+                  return false;
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detail View 2 -->
+        <div id="vacancy-detail-2" class="vacancy-detail">
+          <div class="detail-image">
+            <img
+              src="assets/imgs/MIRadio Vacancy.jpg"
+              alt="MIRadio Vacancies"
+            />
+          </div>
+          <div class="detail-content">
+            <div class="detail-header">
+              <h2 class="detail-title">Program Director</h2>
+              <div class="detail-company">MI Radio</div>
+              <div class="detail-meta">
+                <span><i class="ti-location-pin"></i> Yangon, Myanmar</span>
+                <span><i class="ti-briefcase"></i> Media & Production</span>
+                <span><i class="ti-time"></i> Full time</span>
+              </div>
+              <div class="detail-salary">
+                <i class="ti-money"></i> Base on experience
+              </div>
+              <div class="detail-meta">
+                <span><i class="ti-calendar"></i> Posted Jan 28 2025</span>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <p>
+                သင်က Creative ဖြစ်ပြီး ပျော်စရာကောင်းတဲ့ Work environment
+                မှာအလုပ်လုပ်ချင်တဲ့သူ တစ်ယောက်ဆိုရင် MI Radio နဲ့အတူတူ
+                လက်တွဲအလုပ်လုပ်ဖို့ ဖိတ်ခေါ်လိုက်ပါတယ်...🙆🏼‍♀️ နိုင်ငံတကာမှာ
+                ရေပန်းစားနေတဲ့ သီချင်းတွေ၊
+                စိတ်ဝင်စားဖွယ်ကောင်းတဲ့အကြောင်းအရာတွေကို စဉ်ဆက်မပြတ်
+                တင်ဆက်ပေးလျက်ရှိတဲ့ MI Radioကနေ ခေါ်ယူလျက်ရှိတဲ့ Positions
+                လေးတွေကို လာရောက်လျှောက်ထား လိုက်ကြဖို့ ဖိတ်ခေါ်လိုက်ပါတယ်။
+              </p>
+            </div>
+
+            <div class="detail-section">
+              <h5>Job Description</h5>
+              <ul>
+                <li>
+                  မိမိတာဝန်ယူထားသည့် ရိုက်ကူးရေးအစီအစဥ်အတွက် Script
+                  ပြင်ဆင်ရေးသားပြီး အချိန်မီရိုက်ကူးတင်ဆက်ရပါမည်။
+                </li>
+                <li>
+                  သုတ၊ ရသ၊ အသိပညာ ဗဟုသုတဆိုင်ရာ အကြောင်းအရာများကို
+                  အမြဲစူးစမ်းလေ့လာပြီး မိမိအစီအစဥ်နှင့်လိုက်ဖက်သော
+                  အကြောင်းအရာများကို ပရိသတ်ထံသို့ တင်ဆက်မျှဝေပေးရပါမည်။
+                </li>
+                <li>
+                  program နဲ့ သက်ဆိုင်သည့် indoor/outdoor/online promotion
+                  activities အစီအစဥ်များအတွက် ဓာတ်ပုံ၊ ဗီဒီယိုများ
+                  ရိုက်ကူးရနိုင်ပြီး အများပြည်သူအလုပ်ပိတ်ရက်များတွင်ပါ Outdoor
+                  activities များ ပြုလုပ်ပါက လာရောက်နိုင်ရပါမည်။
+                </li>
+                <li>
+                  လစဥ် လုပ်ငန်းသတ်မှတ်ချက်များကို ပြည့်မီအောင်
+                  လုပ်ဆောင်နိုင်ရပါမည်။
+                </li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h5>How to apply</h5>
+              <ul>
+                <li>
+                  Submit your CV to
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeDEdQPfA0SbWN6rQ7-apzROToGjJPfeZlkluGYw5Rv6WJX0g/viewform?fbclid=IwY2xjawJTHmtleHRuA2FlbQIxMAABHXnRf8sWgvzavG2rWVR8puZZ1gIdcRX-z3QxTj4ph2iPRI5P9xl_-PFfdg_aem_ScdWi5hSYo7-I_HOBWAKtw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Google Form</a
+                  >
+                  for your application 📨
+                </li>
+              </ul>
+            </div>
+
+            <div class="action-buttons">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeDEdQPfA0SbWN6rQ7-apzROToGjJPfeZlkluGYw5Rv6WJX0g/viewform?fbclid=IwY2xjawJTHmtleHRuA2FlbQIxMAABHXnRf8sWgvzavG2rWVR8puZZ1gIdcRX-z3QxTj4ph2iPRI5P9xl_-PFfdg_aem_ScdWi5hSYo7-I_HOBWAKtw"
+                class="btn btn-primary"
+                >Quick Apply</a
+              >
+              <a
+                href="#"
+                class="btn btn-outline-secondary"
+                onclick="shareOnFacebook()"
+              >
+                Share
+              </a>
+
+              <script>
+                function shareOnFacebook() {
+                  const url = encodeURIComponent(window.location.href);
+                  if (
+                    /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                      navigator.userAgent
+                    )
+                  ) {
+                    // Mobile devices
+                    window.open(`fb://share?u=${url}`, "_blank");
+                  } else {
+                    // Desktop
+                    window.open(
+                      `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+                      "facebook-share-dialog",
+                      "width=626,height=436"
+                    );
+                  }
+                  return false;
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function showVacancyDetail(id) {
+        // Hide all detail views first
+        document.querySelectorAll(".vacancy-detail").forEach((detail) => {
+          detail.classList.remove("active");
+        });
+
+        // Show the selected one
+        const detailView = document.getElementById(`vacancy-detail-${id}`);
+        detailView.classList.add("active");
+
+        // Scroll to the detail view
+        detailView.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+
+      // Close detail view when clicking outside
+      document.addEventListener("click", function (event) {
+        if (
+          !event.target.closest(".vacancy-preview") &&
+          !event.target.closest(".vacancy-detail")
+        ) {
+          document.querySelectorAll(".vacancy-detail").forEach((detail) => {
+            detail.classList.remove("active");
+          });
+        }
+      });
+    </script>
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-6">
+            <p>
+              Copyright
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              &copy;
+              <a href="http://www.htoohtetaung.com" target="_blank"
+                >Htoo Htet Aung</a
+              >
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <div class="socials">
+              <a
+                href="https://www.facebook.com/htoohtetaung15/"
+                class="social-item"
+                target="_blank"
+              >
+                <i class="ti-facebook"></i>
+              </a>
+              <a
+                class="social-item"
+                href="mailto:htoohtetaung.officially@gmail.com"
+                target="_blank"
+              >
+                <i class="ti-google"></i>
+              </a>
+              <a
+                class="social-item"
+                href="tel:+85510232513"
+                onclick="if (!navigator.userAgent.match(/Mobi|Android|iPhone/i)) { alert('Call this number: +85510232513'); return false; }"
+              >
+                <i class="ti-mobile"></i>
+              </a>
+              <a
+                class="social-item"
+                href="https://www.linkedin.com/in/htoohtetaung/"
+              >
+                <i class="ti-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- steller js -->
+    <script src="assets/js/steller.js"></script>
+  </body>
+</html>
