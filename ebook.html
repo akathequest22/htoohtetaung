@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="I'm a full stack digital marketer with over 7 years of experience. I have worked with diverse clients and industries, delivering successful digital marketing strategies and campaigns. My expertise spans from social media management to SEO, PPC, and content marketing. I'm dedicated to helping businesses grow their online presence and achieve their marketing goals.I'm currently living in Cambodia."
+    />
+    <meta name="author" content="Devcrud" />
+    <meta
+      name="facebook-domain-verification"
+      content="23sdtvjc7iegxo9t7qrqqyc5otd57n"
+    />
+    <title>Knowledgeable Marketing eBooks | Htoo Htet Aung</title>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/aka logo.png" />
+    <link rel="canonical" href="https://www.htoohtetaung.com/ebook.html" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-88TSH65JBT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-88TSH65JBT");
+    </script>
+
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css"
+    />
+    <!-- Bootstrap + Steller main styles -->
+    <link rel="stylesheet" href="assets/css/steller.css" />
+
+    <style>
+      /* Navigation styles */
+      .dropdown-menu {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, transform 0.3s;
+      }
+      .nav-item.dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+      }
+      .dropdown-item:hover {
+        background-color: #ff6600;
+        color: white;
+      }
+      .flag-icon {
+        width: auto;
+        height: 40px;
+        border-radius: 50%;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .lang-btn:hover .flag-icon {
+        transform: scale(1.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Main content styles */
+      .main-content {
+        padding: 80px 0 40px;
+      }
+
+      /* Books section styles */
+      .ebooks-section {
+        padding: 40px 0;
+      }
+
+      .ebooks-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .ebooks-header h2 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .ebooks-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-bottom: 40px;
+      }
+
+      .ebook-card {
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .ebook-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .ebook-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .ebook-info {
+        padding: 20px;
+      }
+
+      .ebook-title {
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+        color: #333;
+        min-height: 50px;
+      }
+
+      .ebook-author {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+      }
+
+      .ebook-category {
+        display: inline-block;
+        background-color: #f0f0f0;
+        color: #555;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        margin-bottom: 12px;
+      }
+
+      .action-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+      }
+
+      .view-btn,
+      .download-btn {
+        padding: 8px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+      }
+
+      .view-btn {
+        background-color: #f0f0f0;
+        color: #333;
+      }
+
+      .view-btn:hover {
+        background-color: #e0e0e0;
+      }
+
+      .download-btn {
+        background-color: #ff6600;
+        color: white;
+      }
+
+      .download-btn:hover {
+        background-color: #e65c00;
+      }
+
+      .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      .pagination button {
+        padding: 8px 15px;
+        margin: 0 5px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .pagination button:hover {
+        background-color: #f0f0f0;
+      }
+
+      .pagination button.active {
+        background-color: #4caf50;
+        color: white;
+        border-color: #4caf50;
+      }
+
+      @media (max-width: 1200px) {
+        .ebooks-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 992px) {
+        .ebooks-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .ebooks-header h2 {
+          font-size: 2rem;
+        }
+
+        .ebooks-grid {
+          gap: 20px;
+        }
+
+        .ebook-image {
+          height: 200px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .ebooks-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .ebook-card {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Page navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      data-spy="affix"
+      data-offset-top="0"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="assets/imgs/aka logo.png" alt="aka logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#partners">My Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feedbacks">Feedbacks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownBlog"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Blog
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="#">Article</a>
+                <a class="dropdown-item" href="/vacancy.html">Vacancy</a>
+                <a class="dropdown-item" href="/ebook.html">Book</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary rounded ml-4" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item language-switcher">
+              <a
+                class="lang-btn"
+                id="lang-en"
+                href="/"
+                onclick="changeLanguage('en')"
+              >
+                <img
+                  src="assets/imgs/Flag-of-Great-Britain-11.png"
+                  class="flag-icon"
+                  alt="English"
+                />
+              </a>
+              |
+              <a
+                class="lang-btn"
+                id="lang-mm"
+                href="/mm.html"
+                onclick="changeLanguage('mm')"
+              >
+                <img
+                  src="assets/imgs/Myanmar-11.png"
+                  class="flag-icon"
+                  alt="Myanmar"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      function changeLanguage(lang) {
+        if (lang === "mm") {
+          document
+            .querySelectorAll(".nav-link, .dropdown-item, .btn")
+            .forEach((el) => {
+              el.textContent = el.getAttribute("data-mm");
+            });
+        } else {
+          document
+            .querySelectorAll(".nav-link, .dropdown-item, .btn")
+            .forEach((el) => {
+              el.textContent = el.getAttribute("data-en");
+            });
+        }
+      }
+    </script>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- eBooks Section -->
+      <section class="ebooks-section">
+        <div class="container">
+          <div class="ebooks-header">
+            <h2>FREE EBOOKS AND DEALS</h2>
+            <p>(view all)</p>
+          </div>
+
+          <!-- Page 1 -->
+          <div class="ebooks-grid" id="page1">
+            <!-- Book 1 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="The Book of Crowe"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">The Book of Crowe</h3>
+                <p class="ebook-author">James Leonard</p>
+                <span class="ebook-category">Fantasy</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="Arctic Revelation"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">Arctic Revelation</h3>
+                <p class="ebook-author">Hugh Finch</p>
+                <span class="ebook-category">Adventure</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="One Fine Night"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">One Fine Night</h3>
+                <p class="ebook-author">Kait Nolan</p>
+                <span class="ebook-category">Romance</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 4 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="Seven Point Eight: Beyond"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">Seven Point Eight: Beyond</h3>
+                <p class="ebook-author">K.M. Gruchelska</p>
+                <span class="ebook-category">Sci-Fi</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 5 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="Into the Gray Scale"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">Into the Gray Scale</h3>
+                <p class="ebook-author">Oge Mobuogwu</p>
+                <span class="ebook-category">Mystery</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 6 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="Carved In Stone"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">Carved In Stone</h3>
+                <p class="ebook-author">Julia Shupe</p>
+                <span class="ebook-category">Historical</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 7 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="The Silent Witness"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">The Silent Witness</h3>
+                <p class="ebook-author">Emma Thompson</p>
+                <span class="ebook-category">Thriller</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 8 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="Ocean's Whisper"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">Ocean's Whisper</h3>
+                <p class="ebook-author">Michael Chen</p>
+                <span class="ebook-category">Fantasy</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 9 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="The Last Summer"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">The Last Summer</h3>
+                <p class="ebook-author">Sarah Johnson</p>
+                <span class="ebook-category">Romance</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 10 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="Quantum Leap"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">Quantum Leap</h3>
+                <p class="ebook-author">David Zhang</p>
+                <span class="ebook-category">Sci-Fi</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 11 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="Midnight in Paris"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">Midnight in Paris</h3>
+                <p class="ebook-author">Claire Dubois</p>
+                <span class="ebook-category">Mystery</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 12 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="The Art of War"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">The Art of War</h3>
+                <p class="ebook-author">Sun Tzu</p>
+                <span class="ebook-category">Non-Fiction</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 13 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="The Alchemist"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">The Alchemist</h3>
+                <p class="ebook-author">Paulo Coelho</p>
+                <span class="ebook-category">Fiction</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 14 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="The Great Gatsby"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">The Great Gatsby</h3>
+                <p class="ebook-author">F. Scott Fitzgerald</p>
+                <span class="ebook-category">Classic</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 15 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="To Kill a Mockingbird"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">To Kill a Mockingbird</h3>
+                <p class="ebook-author">Harper Lee</p>
+                <span class="ebook-category">Classic</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 16 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="1984"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">1984</h3>
+                <p class="ebook-author">George Orwell</p>
+                <span class="ebook-category">Dystopian</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 17 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="Pride and Prejudice"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">Pride and Prejudice</h3>
+                <p class="ebook-author">Jane Austen</p>
+                <span class="ebook-category">Classic</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 18 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="The Hobbit"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">The Hobbit</h3>
+                <p class="ebook-author">J.R.R. Tolkien</p>
+                <span class="ebook-category">Fantasy</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 19 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="The Catcher in the Rye"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">The Catcher in the Rye</h3>
+                <p class="ebook-author">J.D. Salinger</p>
+                <span class="ebook-category">Classic</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Book 20 -->
+            <div class="ebook-card">
+              <img
+                src="/assets/imgs/Ebooks/Ebooks 1 test.webp"
+                alt="The Lord of the Rings"
+                class="ebook-image"
+              />
+              <div class="ebook-info">
+                <h3 class="ebook-title">The Lord of the Rings</h3>
+                <p class="ebook-author">J.R.R. Tolkien</p>
+                <span class="ebook-category">Fantasy</span>
+                <div class="action-buttons">
+                  <button class="view-btn">View</button>
+                  <button class="download-btn">Download</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination">
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-6">
+            <p>
+              Copyright
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              &copy;
+              <a href="http://www.htoohtetaung.com" target="_blank"
+                >Htoo Htet Aung</a
+              >
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <div class="socials">
+              <a
+                href="https://www.facebook.com/htoohtetaung15/"
+                class="social-item"
+                target="_blank"
+              >
+                <i class="ti-facebook"></i>
+              </a>
+              <a
+                class="social-item"
+                href="mailto:htoohtetaung.officially@gmail.com"
+                target="_blank"
+              >
+                <i class="ti-google"></i>
+              </a>
+              <a
+                class="social-item"
+                href="tel:+85510232513"
+                onclick="if (!navigator.userAgent.match(/Mobi|Android|iPhone/i)) { alert('Call this number: +85510232513'); return false; }"
+              >
+                <i class="ti-mobile"></i>
+              </a>
+              <a
+                class="social-item"
+                href="https://www.linkedin.com/in/htoohtetaung/"
+              >
+                <i class="ti-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- steller js -->
+    <script src="assets/js/steller.js"></script>
+
+    <script>
+      // Simple pagination functionality
+      document.querySelectorAll(".pagination button").forEach((button) => {
+        button.addEventListener("click", function () {
+          document
+            .querySelector(".pagination button.active")
+            .classList.remove("active");
+          this.classList.add("active");
+          // In a real implementation, you would load the appropriate page content here
+        });
+      });
+    </script>
+  </body>
+</html>
