@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="I'm a full stack digital marketer with over 7 years of experience. I have worked with diverse clients and industries, delivering successful digital marketing strategies and campaigns. My expertise spans from social media management to SEO, PPC, and content marketing. I'm dedicated to helping businesses grow their online presence and achieve their marketing goals.I'm currently living in Cambodia."
+    />
+    <meta name="author" content="Devcrud" />
+    <meta name="facebook-domain-verification" content="23sdtvjc7iegxo9t7qrqqyc5otd57n" />
+    <title>Tech & Related Articles | Htoo Htet Aung</title>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/aka logo.png">
+    <link rel="canonical" href="https://www.htoohtetaung.com/article.html">
+
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-88TSH65JBT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-88TSH65JBT');
+</script>
+
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css"
+    />
+    <!-- Bootstrap + Steller main styles -->
+    <link rel="stylesheet" href="assets/css/steller.css" />
+
+    <style>
+      /* Navigation styles */
+      .dropdown-menu {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, transform 0.3s;
+      }
+      .nav-item.dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+      }
+      .dropdown-item:hover {
+        background-color: #ff6600;
+        color: white;
+      }
+      .flag-icon {
+        width: auto;
+        height: 40px;
+        border-radius: 50%;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .lang-btn:hover .flag-icon {
+        transform: scale(1.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Latest posts styling */
+      .latest-post-container {
+        margin: 20px auto;
+        overflow: hidden;
+        position: relative;
+        height: 60px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 1200px;
+      }
+
+      .latest-post-title {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ff6600;
+        font-weight: bold;
+        font-size: 1.2em;
+        z-index: 2;
+        background: #f8f9fa;
+        padding-right: 15px;
+      }
+
+      .latest-post-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        position: absolute;
+        left: 150px;
+        top: 50%;
+        transform: translateY(-50%);
+        white-space: nowrap;
+        animation: crawl 60s linear infinite;
+        width: calc(100% - 170px);
+      }
+
+      @keyframes crawl {
+        0% {
+          transform: translateY(-50%) translateX(100%);
+        }
+        100% {
+          transform: translateY(-50%) translateX(-100%);
+        }
+      }
+
+      .latest-post-list li {
+        display: inline-block;
+        margin-right: 30px;
+        position: relative;
+      }
+
+      .latest-post-list li:after {
+        content: "•";
+        color: #ddd;
+        position: absolute;
+        right: -18px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .latest-post-list li:last-child:after {
+        display: none;
+      }
+
+      .latest-post-list a {
+        color: #ff6600;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s;
+      }
+
+      .latest-post-list a:hover {
+        color: #e65c00;
+        text-decoration: underline;
+      }
+
+      /* Blog post styling */
+      .blog-post {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .blog-post:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .post-image {
+        width: 457px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-right: 20px;
+      }
+
+      .post-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .blog-post h2 {
+        color: #2c3e50;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+      }
+
+      .post-meta {
+        color: #7f8c8d;
+        font-size: 0.9em;
+        margin-bottom: 15px;
+      }
+
+      .post-author {
+        font-weight: bold;
+        color: #555;
+      }
+
+      .post-excerpt {
+        color: #555;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .read-more {
+        color: #ff6600;
+        text-decoration: none;
+        font-weight: bold;
+        align-self: flex-start;
+      }
+
+      .read-more:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .blog-post {
+          flex-direction: column;
+        }
+
+        .post-image {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+
+        .latest-post-container {
+          height: 80px;
+        }
+
+        .latest-post-title {
+          position: static;
+          transform: none;
+          padding: 10px 20px;
+        }
+
+        .latest-post-list {
+          position: static;
+          transform: none;
+          padding: 0 20px 10px;
+          animation: none;
+          overflow-x: auto;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Page navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="assets/imgs/aka logo.png" alt="aka logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#partners">My Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feedbacks">Feedbacks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="/article.html">Article</a>
+                <a class="dropdown-item" href="/vacancy.html">Vacancy</a>
+                <a class="dropdown-item" href="/ebook.html">Book</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary rounded ml-4" href="portfolio.html">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Latest Post Section with Crawling Titles -->
+    <div class="latest-post-container">
+      <div class="latest-post-title">Latest Posts</div>
+      <ul class="latest-post-list">
+        <li><a href="#">Responsive Design Principles</a></li>
+        <li><a href="#">JavaScript ES6 Features You Should Know</a></li>
+        <li><a href="#">CSS Flexbox Complete Guide</a></li>
+        <li><a href="#">Building Your First React Application</a></li>
+        <li><a href="#">Node.js for Beginners</a></li>
+        <li><a href="#">Advanced CSS Techniques</a></li>
+        <li><a href="#">Web Performance Optimization</a></li>
+        <li><a href="#">Vue.js vs React Comparison</a></li>
+      </ul>
+    </div>
+
+    <!-- Blog Posts -->
+    <div class="container">
+      <div class="blog-post">
+        <img
+          src="/assets/imgs/Article/test.jpg"
+          alt="Web Development"
+          class="post-image"
+        />
+        <div class="post-content">
+          <h2>Getting Started with Web Development</h2>
+          <div class="post-meta">
+            <span class="post-author">By John Doe</span> | Posted on May 15,
+            2023
+          </div>
+          <p class="post-excerpt">
+            In this post, we'll explore the basics of web development
+            including HTML structure, CSS styling, and JavaScript
+            functionality. Perfect for beginners who want to build their first
+            website. We'll cover everything from setting up your development
+            environment to deploying your first project. Learn how to create
+            responsive layouts, add interactivity, and optimize your code for
+            better performance.
+          </p>
+          <a href="#" class="read-more">See More →</a>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <img
+          src="/assets/imgs/Article/test.jpg"
+          alt="Responsive Design"
+          class="post-image"
+        />
+        <div class="post-content">
+          <h2>Responsive Design Principles</h2>
+          <div class="post-meta">
+            <span class="post-author">By Sarah Smith</span> | Posted on April
+            28, 2023
+          </div>
+          <p class="post-excerpt">
+            Learn how to create websites that look great on all devices. We'll
+            cover media queries, flexible grids, and responsive images to
+            ensure your site works perfectly on mobile, tablet, and desktop.
+            Practical examples included to help you implement these techniques
+            immediately. Discover the best practices for typography, spacing,
+            and component behavior across different screen sizes.
+          </p>
+          <a href="#" class="read-more">See More →</a>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <img
+          src="/assets/imgs/Article/test.jpg"
+          alt="JavaScript ES6"
+          class="post-image"
+        />
+        <div class="post-content">
+          <h2>JavaScript ES6 Features You Should Know</h2>
+          <div class="post-meta">
+            <span class="post-author">By Mike Johnson</span> | Posted on April
+            10, 2023
+          </div>
+          <p class="post-excerpt">
+            ECMAScript 6 introduced many powerful features to JavaScript. In
+            this post, we'll examine arrow functions, template literals,
+            destructuring, and other ES6 features that will improve your code.
+            Each feature is explained with clear examples and best practice
+            recommendations. Understand how these modern syntax features can
+            make your code more concise and maintainable.
+          </p>
+          <a href="#" class="read-more">See More →</a>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <img
+          src="/assets/imgs/Article/test.jpg"
+          alt="CSS Flexbox"
+          class="post-image"
+        />
+        <div class="post-content">
+          <h2>CSS Flexbox Complete Guide</h2>
+          <div class="post-meta">
+            <span class="post-author">By Emily Davis</span> | Posted on March
+            22, 2023
+          </div>
+          <p class="post-excerpt">
+            Flexbox has revolutionized CSS layouts. This comprehensive guide
+            will walk you through all the flexbox properties with practical
+            examples to help you master this essential layout tool. We'll
+            start with the basics and progress to advanced layout techniques.
+            Learn how to create complex responsive layouts with minimal code
+            and solve common layout challenges.
+          </p>
+          <a href="#" class="read-more">See More →</a>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <img
+          src="/assets/imgs/Article/test.jpg"
+          alt="React Application"
+          class="post-image"
+        />
+        <div class="post-content">
+          <h2>Building Your First React Application</h2>
+          <div class="post-meta">
+            <span class="post-author">By David Wilson</span> | Posted on March
+            5, 2023
+          </div>
+          <p class="post-excerpt">
+            React is one of the most popular JavaScript frameworks. Follow
+            along as we build a simple React app from scratch, covering
+            components, state, and props along the way. By the end of this
+            tutorial, you'll have a working React application and understand
+            the core concepts. We'll also cover hooks, context API, and best
+            practices for structuring your React projects.
+          </p>
+          <a href="#" class="read-more">See More →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-6">
+            <p>
+              Copyright
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              &copy;
+              <a href="http://www.htoohtetaung.com" target="_blank">Htoo Htet Aung</a>
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <div class="socials">
+              <a
+              href="https://www.facebook.com/htoohtetaung15/"
+              class="social-item"
+              target="_blank"
+              ><i class="ti-facebook"></i
+            ></a>
+            <a class="social-item" href="mailto:htoohtetaung.officially@gmail.com" target="_blank" >
+              <i class="ti-google"></i>
+              <a
+              class="social-item"
+              href="tel:+85510232513"
+              onclick="if (!navigator.userAgent.match(/Mobi|Android|iPhone/i)) { alert('Call this number: +85510232513'); return false; }"
+            >
+              <i class="ti-mobile"></i>
+            </a>
+              <a class="social-item" href="https://www.linkedin.com/in/htoohtetaung/"
+                ><i class="ti-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- steller js -->
+    <script src="assets/js/steller.js"></script>
+  </body>
+</html>

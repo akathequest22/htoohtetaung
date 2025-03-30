@@ -340,9 +340,9 @@
                 Blog
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="#">Article</a>
+                <a class="dropdown-item" href="/article.html">Article</a>
                 <a class="dropdown-item" href="/vacancy.html">Vacancy</a>
-                <a class="dropdown-item" href="#">Books 3</a>
+                <a class="dropdown-item" href="/ebook.html">Books 3</a>
               </div>
             </li>
             <li class="nav-item">
@@ -353,56 +353,12 @@
                 >Portfolio</a
               >
             </li>
-            <li class="nav-item language-switcher">
-              <a
-                class="lang-btn"
-                id="lang-en"
-                href="/"
-                onclick="changeLanguage('en')"
-              >
-                <img
-                  src="assets/imgs/Flag-of-Great-Britain-11.png"
-                  class="flag-icon"
-                  alt="English"
-                />
-              </a>
-              |
-              <a
-                class="lang-btn"
-                id="lang-mm"
-                href="/mm.html"
-                onclick="changeLanguage('mm')"
-              >
-                <img
-                  src="assets/imgs/Myanmar-11.png"
-                  class="flag-icon"
-                  alt="Myanmar"
-                />
-              </a>
-            </li>
+            
           </ul>
         </div>
       </div>
     </nav>
-
-    <script>
-      function changeLanguage(lang) {
-        if (lang === "mm") {
-          document
-            .querySelectorAll(".nav-link, .dropdown-item, .btn")
-            .forEach((el) => {
-              el.textContent = el.getAttribute("data-mm");
-            });
-        } else {
-          document
-            .querySelectorAll(".nav-link, .dropdown-item, .btn")
-            .forEach((el) => {
-              el.textContent = el.getAttribute("data-en");
-            });
-        }
-      }
-    </script>
-
+    
     <!-- Vacancy Section -->
     <section id="vacancy" class="section">
       <div class="container">
