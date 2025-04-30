@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Crawl-delay: 5
+Sitemap: https://htoohtetaung.com/sitemap.xml
