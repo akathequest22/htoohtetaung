@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# 1. HTTP အားလုံးကို HTTPS www သို့ ပြောင်းရန်
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^htoohtetaung\.com [NC]
+RewriteRule ^(.*)$ https://www.htoohtetaung.com/$1 [L,R=301]
+
+# 2. non-www HTTPS ကို www ပါအောင် ပြောင်းရန်
+RewriteCond %{HTTP_HOST} ^htoohtetaung\.com [NC]
+RewriteRule ^(.*)$ https://www.htoohtetaung.com/$1 [L,R=301]
+
+# 3. index.html ကို root URL သို့ ပြောင်းရန်
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
+
+# Security Headers
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
