@@ -60,129 +60,152 @@
 
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <!-- Page navigation -->
-    
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
-      <div class="container">
-        <a class="navbar-brand" href="/">
-          <img src="assets/imgs/aka-01.png" alt="aka logo"  style="width: auto; height: auto; max-width: 40%; object-fit: contain;"/>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto align-items-center">
-            <li class="nav-item">
-              <a class="nav-link" href="/" style="color: #666;">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about" style="color: #666;">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#service" style="color: #666;">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#partners" style="color: #666;">My Partners</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#feedbacks" style="color: #666;">Feedbacks</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience" style="color: #666;">Experience</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #666;">
-                Blog
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="/article.html" style="color: #666;">Article</a>
-                <a class="dropdown-item" href="/vacancy.html" style="color: #666;">Vacancy</a>
-                <a class="dropdown-item" href="/ebook.html" style="color: #666;">Book</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact" style="color: #666;">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-primary rounded ml-4" href="portfolio.html" style="color: #333333;">Portfolio</a>
-            </li>
-            
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <!-- Page navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="assets/imgs/aka-01.png" alt="aka logo" style="width: auto; height: auto; max-width: 40%; object-fit: contain;"/>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <style>
-      .dropdown-menu {
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s, transform 0.3s;
-      }
-      .nav-item.dropdown:hover .dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-      }
-      .dropdown-item:hover {
-        background-color: #ED6E12;
-        color: white;
-      }
-      .flag-icon {
-        width: auto;
-        height: 40px;
-        border-radius: 50%;
-        transition: transform 0.3s, box-shadow 0.3s;
-      }
-      .lang-btn:hover .flag-icon {
-        transform: scale(1.2);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
-      .progress-bar {
-        width: 0;
-        transition: width 2s;
-      }
-      .skills-section:in-viewport .progress-bar {
-        width: attr(data-width);
-      }
-      .skill-box:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      }
-      .partners .carousel-item img {
-        max-width: 80%;
-      }
-      .feedbacks .card, .experience .card {
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-      }
-    </style>
-    
-    <script>
-      function changeLanguage(lang) {
-        if (lang === 'mm') {
-          document.querySelectorAll('.nav-link, .dropdown-item, .btn').forEach(el => {
-            el.textContent = el.getAttribute('data-mm');
-          });
-        } else {
-          document.querySelectorAll('.nav-link, .dropdown-item, .btn').forEach(el => {
-            el.textContent = el.getAttribute('data-en');
-          });
-        }
-      }
-    </script>
-    
-    
-    <!-- End of page navibation -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="/" style="color: #666;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about" style="color: #666;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service" style="color: #666;">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#partners" style="color: #666;">My Partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#feedbacks" style="color: #666;">Feedbacks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience" style="color: #666;">Experience</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #666;">
+            Blog
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownBlog">
+            <a class="dropdown-item" href="/article.html" style="color: #666;">Article</a>
+            <a class="dropdown-item" href="/vacancy.html" style="color: #666;">Vacancy</a>
+            <a class="dropdown-item" href="/ebook.html" style="color: #666;">Ebook</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" style="color: #666;">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary rounded ml-4" href="portfolio.html" style="color: #333333;">Portfolio</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  /* Navigation link hover effect */
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #FF7A57 !important;
+  }
+
+  /* Dropdown menu styles */
+  .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 0.5rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
+    display: block;
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .dropdown-item {
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #FF7A57;
+    color: white !important;
+  }
+  
+  /* Flag icon styles */
+  .flag-icon {
+    width: auto;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .lang-btn:hover .flag-icon {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Other styles */
+  .progress-bar {
+    width: 0;
+    transition: width 2s;
+  }
+  
+  .skills-section:in-viewport .progress-bar {
+    width: attr(data-width);
+  }
+  
+  .skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .partners .carousel-item img {
+    max-width: 80%;
+  }
+  
+  .feedbacks .card, .experience .card {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+<script>
+  function changeLanguage(lang) {
+    if (lang === 'mm') {
+      document.querySelectorAll('.nav-link, .dropdown-item, .btn').forEach(el => {
+        el.textContent = el.getAttribute('data-mm');
+      });
+    } else {
+      document.querySelectorAll('.nav-link, .dropdown-item, .btn').forEach(el => {
+        el.textContent = el.getAttribute('data-en');
+      });
+    }
+  }
+</script>
+<!-- End of page navigation -->
 
     <!-- Page Header -->
     <header class="header" id="home">
@@ -239,7 +262,7 @@
           </div>
         </div>
         <div class="img-holder">
-          <img src="assets/imgs/Digital Marketer.webp" alt="Digital Marketer" />
+          <img src="assets/imgs/Digital Marketer.webp" alt="Digital Marketer" style="max-width:Auto; height:aUTO;" object-fit: contain;  />
         </div>
       </div>
 
@@ -462,7 +485,7 @@
     <!-- Service section -->
     <section id="service" class="section">
       <div class="container text-center">
-        <h2 class="subtitle">Service</h2>
+        <h2 class="subtitle">Services</h2>
         <h3 class="section-title mb-4">What I Do</h3>
         <p class="mb-5 pb-4">
           I help businesses grow their online presence, drive traffic, and achieve measurable success through targeted strategies and digital solutions.
@@ -473,7 +496,7 @@
             <div class="custom-card card border">
               <div class="card-body">
                 <i class="icon ti-facebook "></i>
-                <h4>Social Media Marketing</h4>
+                <h4 >Digital Marketing</h4>
               </div>
             </div>
           </div>
@@ -481,7 +504,7 @@
             <div class="custom-card card border">
               <div class="card-body">
                 <i class="icon ti-desktop"></i>
-                <h4>Web Dev Service</h4>
+                <h4>Web development</h4>
               </div>
             </div>
           </div>
@@ -497,7 +520,7 @@
             <div class="custom-card card border">
               <div class="card-body">
                 <i class="icon ti-bar-chart"></i>
-                <h4>SEO & SEM Services</h4>
+                <h4>SEO & SEM </h4>
               </div>
             </div>
           </div>
@@ -507,125 +530,158 @@
     <!-- End of Sectoin -->
 
     <!-- Skills section -->
-    <style>
-      .progress-bar {
-        background-color: #ff6600 !important; /* Ensure only orange color */
-        transition: width 1s ease-in-out;
-      }
-    
-      .progress-bar span {
-        color: white;
-        font-weight: bold;
-      }
-    
-      .skill-item {
-        position: relative;
-        transition: all 0.3s ease-in-out;
-      }
-    
-      .skill-item:hover {
-        transform: translateY(-3px);
-      }
-    
-      .skill-item:hover h6 {
-        color: #ff6600;
-      }
-    </style>
-    
-    <section class="section">
-      <div class="container text-center">
-        <h2 class="subtitle">Skills</h2>
-        <h3 class="section-title mb-4">Why Choose me</h3>
-        <p class="mb-5 pb-4">
-          I help businesses grow with smart digital marketing, web development, and SEO strategies. My goal is to create results that matter.
-          <br />
-          "Consistency is key to long-term success."
-        </p>
-        <div class="row text-left">
-          <div class="col-sm-6 skill-item">
-            <h4 class="mb-3">Marketing Strategies</h4>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" aria-label="Marketing Strategies Skill is 89 Percent">
-                <span>89%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 skill-item">
-            <h4 class="mb-3">Project Management</h4>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" aria-label="Project Management Skill:83 Percent">
-                <span>83%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 skill-item">
-            <h4 class="mb-3">Media Buying</h4>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Media Buying Skill:95 Percent" >
-                <span>95%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 skill-item">
-            <h4 class="mb-3">SEO/SEM</h4>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="SEO/SEM Skill:90 Percent">
-                <span>90%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 skill-item">
-            <h4 class="mb-3">Content Marketing</h4>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Content Marketing Skill:85 Percent" >
-                <span>85%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 skill-item">
-            <h4 class="mb-3">Client Communication</h4>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" aria-label="Client Communication Skill:98 Percent">
-                <span>98%</span>
-              </div>
-            </div>
+<style>
+  .progress {
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    background-color: #FF7457 !important;
+    transition: width 1.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5px;
+    font-size: 10px;
+    height: 100%;
+  }
+  
+  .progress-bar span {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 1px;
+  }
+  
+  .skill-item {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 25px;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-3px);
+  }
+  
+  .skill-item:hover h4 {
+    color: #FF7457;
+  }
+  
+  .skill-item h4 {
+    transition: color 0.3s ease;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+</style>
+
+<section class="section" id="skills">
+  <div class="container text-center">
+    <h2 class="subtitle">Skills</h2>
+    <h3 class="section-title mb-4">Why Choose me</h3>
+    <p class="mb-5 pb-4">
+      I help businesses grow with smart digital marketing, web development, and SEO strategies. My goal is to create results that matter.
+      <br />
+      "Consistency is key to long-term success."
+    </p>
+    <div class="row text-left">
+      <div class="col-sm-6 skill-item">
+        <h4 class="mb-3">Marketing Strategies</h4>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 0%" data-width="89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" aria-label="Marketing Strategies Skill is 89 Percent">
+            
           </div>
         </div>
       </div>
-    </section>
+      <div class="col-sm-6 skill-item">
+        <h4 class="mb-3">Project Management</h4>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 0%" data-width="83%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" aria-label="Project Management Skill:83 Percent">
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 skill-item">
+        <h4 class="mb-3">Media Buying</h4>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 0%" data-width="95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Media Buying Skill:95 Percent">
+                      </div>
+        </div>
+      </div>
+      <div class="col-sm-6 skill-item">
+        <h4 class="mb-3">SEO/SEM</h4>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 0%" data-width="90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="SEO/SEM Skill:90 Percent">
+                      </div>
+        </div>
+      </div>
+      <div class="col-sm-6 skill-item">
+        <h4 class="mb-3">Content Marketing</h4>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 0%" data-width="85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Content Marketing Skill:85 Percent">
+                      </div>
+        </div>
+      </div>
+      <div class="col-sm-6 skill-item">
+        <h4 class="mb-3">Client Communication</h4>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 0%" data-width="98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" aria-label="Client Communication Skill:98 Percent">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const progressBars = document.querySelectorAll('.progress-bar');
     
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const progressBars = document.querySelectorAll('.progress-bar');
+    // Function to animate progress bars
+    const animateProgressBars = () => {
+      progressBars.forEach(bar => {
+        const targetWidth = bar.getAttribute('data-width');
+        bar.style.width = targetWidth;
+      });
+    };
     
-        const animateProgressBar = (bar) => {
-          const targetWidth = bar.getAttribute('aria-valuenow') + '%';
-          bar.style.width = targetWidth; // Animate to the target width
-        };
+    // Intersection Observer setup
+    const observerOptions = {
+      threshold: 0.2 // Trigger when 20% of the section is visible
+    };
     
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                progressBars.forEach((bar) => {
-                  animateProgressBar(bar);
-                });
-                observer.disconnect(); // Stop observing after animation
-              }
-            });
-          },
-          {
-            threshold: 0.5, // Trigger when 50% of the section is visible
-          }
-        );
-    
-        const section = document.querySelector('.section');
-        if (section) {
-          observer.observe(section); // Start observing the section
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateProgressBars();
+          observer.unobserve(entry.target); // Stop observing after animation
         }
       });
-    </script>                
-    <!-- End of Skills sections -->
+    }, observerOptions);
+    
+    // Observe the skills section
+    const skillsSection = document.getElementById('skills');
+    if (skillsSection) {
+      observer.observe(skillsSection);
+    }
+    
+    // Reset animation when scrolling back up (optional)
+    window.addEventListener('scroll', function() {
+      const scrollPosition = window.scrollY;
+      const skillsSectionPosition = skillsSection.offsetTop;
+      const windowHeight = window.innerHeight;
+      
+      if (scrollPosition + windowHeight < skillsSectionPosition) {
+        progressBars.forEach(bar => {
+          bar.style.width = '0%';
+        });
+      }
+    });
+  });
+</script>
+<!-- End of Skills sections -->
 
  <!-- Partner Carousel -->
  <section id="partners" class="partners">
@@ -869,147 +925,180 @@
 
 <!-- End Partners Section -->
 
-    <!-- Feedbacks Section -->
-    <section id="feedbacks" class="section">
-      <div class="container text-center">
-        <h3 class="subtitle">Feedbacks</h3>
-        <h4 class="section-title mb-4">What People Say About Me</h4>
-        <p class="mb-5 pb-4">
-          "Discover what people say about me! Heartfelt testimonials and kind words from those I’ve worked with. "
+   <!-- Feedbacks Section -->
+<section id="feedbacks" class="section">
+  <div class="container text-center">
+    <h3 class="subtitle">Feedbacks</h3>
+    <h4 class="section-title mb-4">What People Say About Me</h4>
+    <p class="mb-5 pb-4">
+      "Discover what people say about me! Heartfelt testimonials and kind words from those I've worked with."
+      <br />
+      Let's create something amazing together!
+    </p>
 
- <br />
- Let’s create something amazing together!
-        </p>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          </ol>
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <div class="card testmonial-card border">
-                      <div class="card-body text-center">
-                          <img src="assets/imgs/Nang Hein Kham.webp" alt="Nang Hein Kham - HR Manager - Monnect Group Co.,Ltd." />
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum voluptates in enim vel amet?</p>
-                          <h3 class="title">Nang Hein Kham</h3>
-                          <h4 class="subtitle">HR Manager | Monnect Group of Co.,Ltd.</h5>
-                          <div class="social-icons">
-                            <a href="mailto:nangheinkham0468@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email Nang Hein Kham"></a>
-                              <a href="https://www.linkedin.com/in/lin-lin-1679b6132/" target="_blank" rel="noopener noreferrer"aria-label="Nang Hein Kham-Linkedin"><i class="fab fa-linkedin"></i></a>
-                              <a href="https://monnectgroup.com.mm" target="_blank" rel="noopener noreferrer"aria-label="Monnect Group Co., Ltd"><i class="fas fa-globe"></i></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="carousel-item">
-                  <div class="card testmonial-card border">
-                      <div class="card-body text-center">
-                          <img src="assets/imgs/Ye Lin Naing.webp" alt="Ye Lin Naing - Founder - Brand Diary Branding & Marketing Agency"  />
-                          <p>"An excellent communicator who builds strong client relationships, approaches work with enthusiasm, and maintains a positive, solution-focused mindset."</p>
-                          <h3 class="title">Ye Lin Naing</h3>
-                          <h4 class="subtitle">Founder | Brand Diary Branding & Marketing Agency</h5>
-                          <div class="social-icons">
-                              <a href="mailto:yelinnaing027@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope" aria-label="Ye Lin Naing-Gmail" ></i></a>
-                              <a href="https://www.linkedin.com/in/ye-lin-naing-9abb2b22a/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-label="Ye Lin Naing-Linkedin"></i></a>
-                              <a href="https://brand-diary.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe" aria-label="Brand Diary Branding Agency"></i></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="carousel-item">
-                  <div class="card testmonial-card border">
-                      <div class="card-body text-center">
-                          <img src="assets/imgs/Phyo Thinzar Khine @ Ko Phyo.webp" alt="Phyo Thinzar Khine - Account Director- Brand Diary Branding & Marketing Agency" />
-                          <p>Having the ability to strategize step-by-step the most effective approaches to achieving digital goals was one of his strong points.
+    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
+      <div class="carousel-inner">
 
-                            A result-driven and advanced setup for ads tools is what he specializes in. 
-                           
-                           Honest, knowledgeable and the most guidance person I’ve ever seen.</p>
-                          <h3 class="title">Zark</h3>
-                          <h4 class="subtitle">Account Director | Brand Diary Branding & Marketing Agency</h5>
-                          <div class="social-icons">
-                              <a href="mailto:kophyothatoega@gmail.com" target="_blank" rel="noopener noreferrer" ><i class="fas fa-envelope" aria-label="Phyo Thin Zar Khine-Gmail"></i></a>
-                              <a href="https://www.linkedin.com/in/phyothinzar-khine-zark-547343155/" target="_blank" rel="noopener noreferrer" aria-label="Phyo Thin Zar Khine-Linkedin"><i class="fab fa-linkedin"></i></a>
-                              <a href="https://brand-diary.com" target="_blank" rel="noopener noreferrer" ><i class="fas fa-globe"aria-label="Brand Diary Branding Agency "></i></a>
-                          </div>
-                      </div>
-                  </div>
+        <!-- Testimonial 1 -->
+        <div class="carousel-item active">
+          <div class="card testmonial-card border">
+            <div class="card-body text-center">
+              <img src="assets/imgs/Nang Hein Kham.webp" alt="Nang Hein Kham" />
+              <p>"Highly professional and cooperative, always delivers high-quality work."</p>
+              <h3 class="title">Nang Hein Kham</h3>
+              <h4 class="subtitle">HR Manager | Monnect Group of Co.,Ltd.</h4>
+              <div class="social-icons">
+                <a href="mailto:nangheinkham0468@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/lin-lin-1679b6132/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://monnectgroup.com.mm" target="_blank" aria-label="Website"><i class="fas fa-globe"></i></a>
               </div>
-      
-              <div class="carousel-item">
-                  <div class="card testmonial-card border">
-                      <div class="card-body text-center">
-                          <img src="assets/imgs/ThwatarWinPyaeSone.webp" alt="Thawtar Win Pyae Sone - Head of Media and Marketing - Monnect Group Co.,Ltd." />
-                          <p>"A highly skilled professional with exceptional expertise in media buying and project management, consistently delivering strategic results and driving success."</p>
-                          <h3 class="title">Thawtar Win Pyae Sone</h3>
-                          <h4 class="subtitle">Head of Media & Marketing | Monnect Group of Co.,Ltd.</h5>
-                          <div class="social-icons">
-                              <a href="mailto:thawtar.work.mail@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope" aria-label="Thawtar Win Pyae Sone-Gmail"></i></a>
-                              <a href="https://www.linkedin.com/in/thawtar-win-pyae-sone-6580591b0/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-label="Thawtar Win Pyae Sone-Linkedin" ></i></a>
-                              <a href="https://monnectgroup.com.mm" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe" aria-label="Monnect Group" ></i></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-      
-              <div class="carousel-item">
-                  <div class="card testmonial-card border">
-                      <div class="card-body text-center">
-                          <img src="assets/imgs/Aung Chan Min.webp" alt="Aung Chan Min - Managing Director - Golden KBC Empire Construction Co.,Ltd." />
-                          <p>"A skilled social media marketer who excels at strategy and engagement while being highly responsible and dedicated to delivering results."
-                          </p>
-                          <h3 class="title">Aung Chan Min</h3>
-                          <h4 class="subtitle">Managing Director |Golden KBC Empire Construction Co.,Ltd.</h5>
-                          <div class="social-icons">
-                              <a href="mailto:aungchan.min@email.com" target="_blank" rel="noopener noreferrer" ><i class="fas fa-envelope" aria-label="Aung Chan Min-Gmail"></i></a>
-                              <a href="https://www.linkedin.com/in/aung-chan-min-860518149/" target="_blank" rel="noopener noreferrer" aria-label="Aung Chan Min-Linkedin"><i class="fab fa-linkedin"></i></a>
-                              <a href="https://www.facebook.com/profile.php?id=100088670024194" target="_blank" rel="noopener noreferrer" ><i class="fas fa-globe" aria-label="Aung Chan Min-Facebook"></i></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+            </div>
           </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="carousel-item">
+          <div class="card testmonial-card border">
+            <div class="card-body text-center">
+              <img src="assets/imgs/Ye Lin Naing.webp" alt="Ye Lin Naing" />
+              <p>"An excellent communicator who builds strong client relationships, approaches work with enthusiasm."</p>
+              <h3 class="title">Ye Lin Naing</h3>
+              <h4 class="subtitle">Founder | Brand Diary Branding & Marketing Agency</h4>
+              <div class="social-icons">
+                <a href="mailto:yelinnaing027@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/ye-lin-naing-9abb2b22a/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://brand-diary.com" target="_blank" aria-label="Website"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="carousel-item">
+          <div class="card testmonial-card border">
+            <div class="card-body text-center">
+              <img src="assets/imgs/Phyo Thinzar Khine @ Ko Phyo.webp" alt="Phyo Thinzar Khine" />
+              <p>"Result-driven and advanced setup for ads tools is what he specializes in."</p>
+              <h3 class="title">Zark</h3>
+              <h4 class="subtitle">Account Director | Brand Diary Branding & Marketing Agency</h4>
+              <div class="social-icons">
+                <a href="mailto:kophyothatoega@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/phyothinzar-khine-zark-547343155/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://brand-diary.com" target="_blank" aria-label="Website"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="carousel-item">
+          <div class="card testmonial-card border">
+            <div class="card-body text-center">
+              <img src="assets/imgs/Aung Chan Min.webp" alt="Aung Chan Min" />
+              <p>"A skilled social media marketer who excels at strategy and engagement."</p>
+              <h3 class="title">Aung Chan Min</h3>
+              <h4 class="subtitle">Managing Director | Golden KBC Empire Construction Co.,Ltd.</h4>
+              <div class="social-icons">
+                <a href="mailto:aungchan.min@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/aung-chan-min-860518149/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100088670024194" target="_blank" aria-label="Facebook"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <!-- Font Awesome for Icons -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-      
-        <style>
-          .social-icons {
-            margin-top: 10px;
-          }
-        
-          .social-icons a {
-            display: inline-block;
-            margin: 0 8px;
-            font-size: 20px;
-            color: #ff6600; /* Change to your brand color */
-            transition: color 0.3s;
-          }
-        
-          .social-icons a:hover {
-            color: #cc5500; /* Slightly darker shade on hover */
-          }
-        
-          .card-body img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-          }
-        </style>
-        
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/fc521c6581.js" crossorigin="anonymous"></script>        
-        
-        
-    </section>
-    <!-- End of testmonial section -->
+
+      <!-- Carousel Indicators (outside the cards) -->
+      <ol class="carousel-indicators mt-4">
+        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+        <li data-target="#testimonialCarousel" data-slide-to="3"></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- Styles -->
+<style>
+  .testmonial-card {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: none !important;
+    padding-bottom: 20px;
+  }
+
+  .testmonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-body img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #FF7457;
+    margin-bottom: 15px;
+  }
+
+  .card-body p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .subtitle {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    margin: 0 6px;
+    font-size: 18px;
+    color: #FF7457;
+    transition: all 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #e05d40;
+    transform: translateY(-3px);
+  }
+
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+
+  .carousel-indicators .active {
+    background-color: #FF7457;
+  }
+</style>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/fc521c6581.js" crossorigin="anonymous"></script>
 
    <!-- experience Section -->
    <section id="experience" class="experience">
@@ -1345,9 +1434,7 @@
               <!-- Google Map -->
               <div id="map">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0431405748172!2d104.9163723759043!3d11.54876314447152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951ec19f2b9bf%3A0x333a57ff54575d02!2sCondo%2055!5e0!3m2!1sen!2skh!4v1740650879668!5m2!1sen!2skh"
-                  width="100%"
-                  height="300" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0448135041424!2d104.91584457587469!3d11.548643144473981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513816bbbf87%3A0xf9280ed44f29c604!2sHtoo%20Htet%20Aung%20%7C%20Full%20Stack%20Digital%20Marketer!5e0!3m2!1sen!2skh!4v1746687169982!5m2!1sen!2skh" width="600" height="450" 
                   
                   style="border: 0; border-radius: 10px;"
                   allowfullscreen=""
@@ -1357,6 +1444,8 @@
   aria-label="Google Maps location"
   >
                 </iframe>
+
+                
               </div>
             </div>
           </div>
@@ -1443,8 +1532,6 @@
               </a>
               <a
                 class="social-item"
-                href="tel:+85510232513"
-                onclick="if (!navigator.userAgent.match(/Mobi|Android|iPhone/i)) { alert('Call this number: +85510232513'); return false; }" aria-label="Htoo Htet Aung on Phone"
               >
                 <i class="ti-mobile"></i>
               </a>
