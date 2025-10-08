@@ -20,53 +20,253 @@
     <link rel="canonical" href="https://www.htoohtetaung.com/">
 
     <meta property="og:title" content="Htoo Htet Aung | Full Stack Digital Marketer">
-  <meta property="og:description" content="Hey there! I'm a Digital Marketing Freelancer specializing in SEO/SEM & Media Buying. 7+ years experience across 5 Asian countries. Let's make your brand shine in Myanmar, Thailand, Cambodia and beyond!">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://htoohtetaung.com/assets/imgs/Htoo Htet Aung.jpg" alt="Htoo Htet Aung | Full Stack Digital Marketer" >
-  <meta property="og:image:alt" content="Htoo Htet Aung | Full Stack Digital Marketer">
-  <meta property="og:url" content="https://htoohtetaung.com">
-  <meta property="og:image:width" content="1920">
-  <meta property="og:image:height" content="1080">
-  
+    <meta property="og:description" content="Hey there! I'm a Digital Marketing Freelancer specializing in SEO/SEM & Media Buying. 7+ years experience across 5 Asian countries. Let's make your brand shine in Myanmar, Thailand, Cambodia and beyond!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://htoohtetaung.com/assets/imgs/Htoo Htet Aung.jpg" alt="Htoo Htet Aung | Full Stack Digital Marketer" >
+    <meta property="og:image:alt" content="Htoo Htet Aung | Full Stack Digital Marketer">
+    <meta property="og:url" content="https://htoohtetaung.com">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+    
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Htoo Htet Aung | Full Stack Digital Marketer">
-  <meta name="twitter:description" content="Hey there! I'm a Digital Marketing Freelancer specializing in SEO/SEM & Media Buying. 7+ years experience across 5 Asian countries. Let's make your brand shine in Myanmar, Thailand, Cambodia and beyond!">
-  <meta name="twitter:image" content="https://htoohtetaung.com/assets/imgs/Htoo Htet Aung.jpg" alt="Htoo Htet Aung | Full Stack Digital Marketer">
-<meta property="twitter:url" content="https://htoohtetaung.com">
-  <meta property="twitter:image:width" content="1920">
-  <meta property="twitter:image:height" content="1080">
-     <!-- Google tag (gtag.js) -->
-     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-88TSH65JBT"></script>
-     <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
-       gtag('config', 'G-88TSH65JBT');
-     </script>
-     
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-88TSH65JBT');
-</script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Htoo Htet Aung | Full Stack Digital Marketer">
+    <meta name="twitter:description" content="Hey there! I'm a Digital Marketing Freelancer specializing in SEO/SEM & Media Buying. 7+ years experience across 5 Asian countries. Let's make your brand shine in Myanmar, Thailand, Cambodia and beyond!">
+    <meta name="twitter:image" content="https://htoohtetaung.com/assets/imgs/Htoo Htet Aung.jpg" alt="Htoo Htet Aung | Full Stack Digital Marketer">
+    <meta property="twitter:url" content="https://htoohtetaung.com">
+    <meta property="twitter:image:width" content="1920">
+    <meta property="twitter:image:height" content="1080">
+      <script defer src="https://www.googletagmanager.com/gtag/js?id=G-88TSH65JBT"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-88TSH65JBT');
+      </script>
+      
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-88TSH65JBT');
+    </script>
 
 
-    <!-- font icons -->
     <link
       rel="stylesheet"
       href="assets/vendors/themify-icons/css/themify-icons.css"
     />
-    <!-- Bootstrap + Steller main styles -->
     <link rel="stylesheet" href="assets/css/steller.css" />
     
 
+    <style>
+      /* Navigation link hover effect */
+      .navbar-nav .nav-item .nav-link:hover {
+        color: #FF7A57 !important;
+      }
+
+      /* Dropdown menu styles */
+      .dropdown-menu {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: none;
+        padding: 0.5rem 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+        transform: translateY(10px);
+        display: block;
+      }
+      
+      .nav-item.dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+      
+      .dropdown-item {
+        padding: 0.5rem 1.5rem;
+        transition: all 0.3s ease;
+      }
+      
+      .dropdown-item:hover {
+        background-color: #FF7A57;
+        color: white !important;
+      }
+      
+      /* Flag icon styles */
+      .flag-icon {
+        width: auto;
+        height: 40px;
+        border-radius: 50%;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      
+      .lang-btn:hover .flag-icon {
+        transform: scale(1.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      
+      /* Other styles */
+      .progress-bar {
+        width: 0;
+        transition: width 2s;
+      }
+      
+      .skills-section:in-viewport .progress-bar {
+        width: attr(data-width);
+      }
+      
+      .skill-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+      
+      .partners .carousel-item img {
+        max-width: 80%;
+      }
+      
+      .feedbacks .card, .experience .card {
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Custom styles to precisely match the image layout for Certifications and Footer */
+
+      /* My Certifications Section Styling */
+      .certifications-section {
+        padding: 50px 0;
+        text-align: center;
+        background-color: white; /* Ensure white background for this section if needed */
+      }
+
+      .certifications-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px; /* Space between certifications */
+      }
+
+      .certification-item {
+        max-width: 150px;
+        text-align: center;
+        text-decoration: none; /* Remove underline from link */
+      }
+
+      .certification-item img {
+        width: 100px; /* Adjust size to match the badges in the image */
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px; /* Space inside the badge box */
+        background-color: #f8faff; /* Light blue background for the box */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .certification-item img:hover {
+          transform: translateY(-3px);
+      }
+
+      .certification-text {
+        font-size: 10px;
+        color: #555;
+        margin-top: 5px;
+        line-height: 1.3;
+      }
+      
+      /* Footer Section Styling */
+      .footer-section {
+        background-color: #f0f8ff; /* Light blue background from the image */
+        padding: 30px 0 15px; /* Adjust padding to match visual spacing */
+        color: #555;
+      }
+      
+      .footer-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1100px; /* Control max width for central alignment */
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+      .footer-col {
+        flex: 1; /* Equal width columns */
+        padding: 0 20px;
+        max-width: 300px;
+      }
+      
+      .footer-col h3, .footer-col h4 {
+        color: #000;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      
+      .footer-col h3 {
+        font-size: 20px;
+      }
+      
+      .footer-col h4 {
+        font-size: 16px;
+      }
+      
+      .footer-col p, .footer-col a, .footer-col div {
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #555;
+        text-decoration: none;
+      }
+
+      .footer-col a:hover {
+          color: #FF7A57;
+      }
+
+      .footer-contact-info div {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+      }
+
+      .footer-contact-info i {
+          margin-right: 10px;
+          color: #FF7A57; /* Icon color, adjust if necessary */
+          font-size: 16px;
+      }
+      
+      .footer-bottom {
+        border-top: 1px solid #e0e0e0;
+        padding-top: 10px;
+        margin-top: 20px;
+        text-align: left;
+        font-size: 12px;
+        max-width: 1100px;
+        margin: 20px auto 0;
+        padding: 10px 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .footer-socials {
+        margin-top: 15px;
+        display: flex;
+        gap: 15px;
+      }
+
+      .footer-socials a {
+        color: #555;
+        font-size: 18px;
+        transition: color 0.3s;
+      }
+
+      .footer-socials a:hover {
+        color: #FF7A57;
+      }
+
+    </style>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-  <!-- Page navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
   <div class="container">
     <a class="navbar-brand" href="/">
       <img src="assets/imgs/aka-01.png" alt="aka logo" style="width: auto; height: auto; max-width: 40%; object-fit: contain;"/>
@@ -118,90 +318,18 @@
         </li>
         <li class="nav-item">
           <a 
-   href="https://drive.google.com/file/d/1uJwS3TPjXEk7TYOJpDoQkK7R8afKQGwK/view?usp=sharing" class="btn btn-primary rounded ml-4" 
-   target="_blank"
-   rel="noopener noreferrer"
-   style="color: #333333;">
-   Portfolio
-</a>
+            href="https://drive.google.com/file/d/1uJwS3TPjXEk7TYOJpDoQkK7R8afKQGwK/view?usp=sharing" class="btn btn-primary rounded ml-4" 
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: #333333;"
+          >
+            Portfolio
+          </a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-
-<style>
-  /* Navigation link hover effect */
-  .navbar-nav .nav-item .nav-link:hover {
-    color: #FF7A57 !important;
-  }
-
-  /* Dropdown menu styles */
-  .dropdown-menu {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: none;
-    padding: 0.5rem 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-    transform: translateY(10px);
-    display: block;
-  }
-  
-  .nav-item.dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-  
-  .dropdown-item {
-    padding: 0.5rem 1.5rem;
-    transition: all 0.3s ease;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #FF7A57;
-    color: white !important;
-  }
-  
-  /* Flag icon styles */
-  .flag-icon {
-    width: auto;
-    height: 40px;
-    border-radius: 50%;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .lang-btn:hover .flag-icon {
-    transform: scale(1.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Other styles */
-  .progress-bar {
-    width: 0;
-    transition: width 2s;
-  }
-  
-  .skills-section:in-viewport .progress-bar {
-    width: attr(data-width);
-  }
-  
-  .skill-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .partners .carousel-item img {
-    max-width: 80%;
-  }
-  
-  .feedbacks .card, .experience .card {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-  }
-</style>
 
 <script>
   function changeLanguage(lang) {
@@ -216,10 +344,7 @@
     }
   }
 </script>
-<!-- End of page navigation -->
-
-    <!-- Page Header -->
-    <header class="header" id="home">
+<header class="header" id="home">
       <div class="container">
         <div class="infos">
           <p class="subtitle">hello,I'm</p>
@@ -254,8 +379,7 @@
 
             <a class="social-item" href="mailto:htoohtetaung.officially@gmail.com" class="social-item" target="_blank" rel="noopener noreferrer" aria-label="Htoo Htet Aung -Mail">
               <i class="ti-google"></i>
-          </a>
-          </a>
+            </a>
             <a
               class="social-item"
               href="https://www.linkedin.com/in/htoohtetaung/" class="social-item" target="_blank" rel="noopener noreferrer" aria-label="Htoo Htet Aung-linkedin"
@@ -263,11 +387,11 @@
               ><i class="ti-link"></i
             ></a>
             <a class="social-item" href="tel:+85510232513" 
-   aria-label="Call Htoo Htet Aung: +855 10 232 513"
-   onclick="if (!navigator.userAgent.match(/Mobi|Android|iPhone/i)) { 
-     alert('Please call this number: +855 10 232 513'); 
-     return false; 
-   }">
+              aria-label="Call Htoo Htet Aung: +855 10 232 513"
+              onclick="if (!navigator.userAgent.match(/Mobi|Android|iPhone/i)) { 
+                alert('Please call this number: +855 10 232 513'); 
+                return false; 
+              }">
               <i class="ti-mobile"></i>
             </a>
           </div>
@@ -277,7 +401,6 @@
         </div>
       </div>
 
-      <!-- Header-widget -->
       <style>
         /* Widget styling */
         .widget {
@@ -312,9 +435,7 @@
           opacity: 1; /* Fade in after delay */
         }
       </style>
-    </head>
-          <!-- Widget Section -->
-      <div class="widget">
+          <div class="widget">
         <div class="widget-item">
           <h3 class="count" data-target="58">0</h3>
           <p class="fade-in" style="color: #000000;" weight="bold">Happy Clients</p>
@@ -379,9 +500,6 @@
         });
       </script>
     </header>
-    <!-- End of Page Header -->
-
-    <!-- About section -->
     <style>
       /* Hide text initially */
       .typing-animation {
@@ -493,7 +611,6 @@
     
   
 
-    <!-- Service section -->
     <section id="service" class="section">
       <div class="container text-center">
         <h2 class="subtitle">Services</h2>
@@ -538,769 +655,743 @@
         </div>
       </div>
     </section>
-    <!-- End of Sectoin -->
-
-    <!-- Skills section -->
-<style>
-  .progress {
-    height: 10px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .progress-bar {
-    background-color: #FF7457 !important;
-    transition: width 1.5s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 5px;
-    font-size: 10px;
-    height: 100%;
-  }
-  
-  .progress-bar span {
-    color: white;
-    font-weight: bold;
-    position: relative;
-    top: 1px;
-  }
-  
-  .skill-item {
-    position: relative;
-    transition: all 0.3s ease-in-out;
-    margin-bottom: 25px;
-  }
-  
-  .skill-item:hover {
-    transform: translateY(-3px);
-  }
-  
-  .skill-item:hover h4 {
-    color: #FF7457;
-  }
-  
-  .skill-item h4 {
-    transition: color 0.3s ease;
-    margin-bottom: 8px;
-    font-weight: 600;
-  }
-</style>
-
-<section class="section" id="skills">
-  <div class="container text-center">
-    <h2 class="subtitle">Skills</h2>
-    <h3 class="section-title mb-4">Why Choose me</h3>
-    <p class="mb-5 pb-4">
-      I help businesses grow with smart digital marketing, web development, and SEO strategies. My goal is to create results that matter.
-      <br />
-      "Consistency is key to long-term success."
-    </p>
-    <div class="row text-left">
-      <div class="col-sm-6 skill-item">
-        <h4 class="mb-3">Marketing Strategies</h4>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 0%" data-width="89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" aria-label="Marketing Strategies Skill is 89 Percent">
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 skill-item">
-        <h4 class="mb-3">Project Management</h4>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 0%" data-width="83%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" aria-label="Project Management Skill:83 Percent">
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 skill-item">
-        <h4 class="mb-3">Media Buying</h4>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 0%" data-width="95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Media Buying Skill:95 Percent">
-                      </div>
-        </div>
-      </div>
-      <div class="col-sm-6 skill-item">
-        <h4 class="mb-3">SEO/SEM</h4>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 0%" data-width="90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="SEO/SEM Skill:90 Percent">
-                      </div>
-        </div>
-      </div>
-      <div class="col-sm-6 skill-item">
-        <h4 class="mb-3">Content Marketing</h4>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 0%" data-width="85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Content Marketing Skill:85 Percent">
-                      </div>
-        </div>
-      </div>
-      <div class="col-sm-6 skill-item">
-        <h4 class="mb-3">Client Communication</h4>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 0%" data-width="98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" aria-label="Client Communication Skill:98 Percent">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const progressBars = document.querySelectorAll('.progress-bar');
-    
-    // Function to animate progress bars
-    const animateProgressBars = () => {
-      progressBars.forEach(bar => {
-        const targetWidth = bar.getAttribute('data-width');
-        bar.style.width = targetWidth;
-      });
-    };
-    
-    // Intersection Observer setup
-    const observerOptions = {
-      threshold: 0.2 // Trigger when 20% of the section is visible
-    };
-    
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateProgressBars();
-          observer.unobserve(entry.target); // Stop observing after animation
-        }
-      });
-    }, observerOptions);
-    
-    // Observe the skills section
-    const skillsSection = document.getElementById('skills');
-    if (skillsSection) {
-      observer.observe(skillsSection);
-    }
-    
-    // Reset animation when scrolling back up (optional)
-    window.addEventListener('scroll', function() {
-      const scrollPosition = window.scrollY;
-      const skillsSectionPosition = skillsSection.offsetTop;
-      const windowHeight = window.innerHeight;
-      
-      if (scrollPosition + windowHeight < skillsSectionPosition) {
-        progressBars.forEach(bar => {
-          bar.style.width = '0%';
-        });
+    <style>
+      .progress {
+        height: 10px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        overflow: hidden;
       }
-    });
-  });
-</script>
-<!-- End of Skills sections -->
+      
+      .progress-bar {
+        background-color: #FF7457 !important;
+        transition: width 1.5s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 5px;
+        font-size: 10px;
+        height: 100%;
+      }
+      
+      .progress-bar span {
+        color: white;
+        font-weight: bold;
+        position: relative;
+        top: 1px;
+      }
+      
+      .skill-item {
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 25px;
+      }
+      
+      .skill-item:hover {
+        transform: translateY(-3px);
+      }
+      
+      .skill-item:hover h4 {
+        color: #FF7457;
+      }
+      
+      .skill-item h4 {
+        transition: color 0.3s ease;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+    </style>
 
- <!-- Partner Carousel -->
- <section id="partners" class="partners">
-  <div class="container text-center">
-    <h2 class="subtitle">Valuable Partners</h2>
-    <h3 class="section-title mb-4">Who worked with me </h3>
+    <section class="section" id="skills">
+      <div class="container text-center">
+        <h2 class="subtitle">Skills</h2>
+        <h3 class="section-title mb-4">Why Choose me</h3>
+        <p class="mb-5 pb-4">
+          I help businesses grow with smart digital marketing, web development, and SEO strategies. My goal is to create results that matter.
+          <br />
+          "Consistency is key to long-term success."
+        </p>
+        <div class="row text-left">
+          <div class="col-sm-6 skill-item">
+            <h4 class="mb-3">Marketing Strategies</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 0%" data-width="89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" aria-label="Marketing Strategies Skill is 89 Percent">
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 skill-item">
+            <h4 class="mb-3">Project Management</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 0%" data-width="83%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" aria-label="Project Management Skill:83 Percent">
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 skill-item">
+            <h4 class="mb-3">Media Buying</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 0%" data-width="95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Media Buying Skill:95 Percent">
+                          </div>
+            </div>
+          </div>
+          <div class="col-sm-6 skill-item">
+            <h4 class="mb-3">SEO/SEM</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 0%" data-width="90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="SEO/SEM Skill:90 Percent">
+                          </div>
+            </div>
+          </div>
+          <div class="col-sm-6 skill-item">
+            <h4 class="mb-3">Content Marketing</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 0%" data-width="85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Content Marketing Skill:85 Percent">
+                          </div>
+            </div>
+          </div>
+          <div class="col-sm-6 skill-item">
+            <h4 class="mb-3">Client Communication</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 0%" data-width="98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" aria-label="Client Communication Skill:98 Percent">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <!-- Slide 1 (1-5) -->
-            <div class="carousel-item active">
-                <div class="container">
-                    <div class="row justify-content-center g-4">
-                        <div class="col-2">
-                          <a href="https://citicommyanmar.com/" target="_blank" rel="noopener noreferrer" aria-label="Citicom Myanmar">
-                            <div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/Citicom.jpeg" alt="Citicom Myanmar"></a>
-                                
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const progressBars = document.querySelectorAll('.progress-bar');
+        
+        // Function to animate progress bars
+        const animateProgressBars = () => {
+          progressBars.forEach(bar => {
+            const targetWidth = bar.getAttribute('data-width');
+            bar.style.width = targetWidth;
+          });
+        };
+        
+        // Intersection Observer setup
+        const observerOptions = {
+          threshold: 0.2 // Trigger when 20% of the section is visible
+        };
+        
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              animateProgressBars();
+              observer.unobserve(entry.target); // Stop observing after animation
+            }
+          });
+        }, observerOptions);
+        
+        // Observe the skills section
+        const skillsSection = document.getElementById('skills');
+        if (skillsSection) {
+          observer.observe(skillsSection);
+        }
+        
+        // Reset animation when scrolling back up (optional)
+        window.addEventListener('scroll', function() {
+          const scrollPosition = window.scrollY;
+          const skillsSectionPosition = skillsSection.offsetTop;
+          const windowHeight = window.innerHeight;
+          
+          if (scrollPosition + windowHeight < skillsSectionPosition) {
+            progressBars.forEach(bar => {
+              bar.style.width = '0%';
+            });
+          }
+        });
+      });
+    </script>
+    <section id="partners" class="partners">
+      <div class="container text-center">
+        <h2 class="subtitle">Valuable Partners</h2>
+        <h3 class="section-title mb-4">Who worked with me </h3>
+
+        <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row justify-content-center g-4">
+                            <div class="col-2">
+                              <a href="https://citicommyanmar.com/" target="_blank" rel="noopener noreferrer" aria-label="Citicom Myanmar">
+                                <div class="partner-logo">
+                                    <img src="assets/imgs/Partners Logo/Citicom.jpeg" alt="Citicom Myanmar"></a>
+                                    
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-2">
-                          <a href="https://www.crotontravel.com" target="_blank" rel="noopener noreferrer" aria-label="Croton Travel"><div class="partner-logo">
-                                <img src="assets/imgs/Partners Logo/Croton logo PNG big size.webp" alt="Logo 2">
-                                
-                            </div></a>
-                        </div>
-                        <div class="col-2">
-                          <a href="https://goldsteelconstruction.com/ " target="_blank" rel="noopener noreferrer" aria-label="Gold Steel Construction">
-                            <div class="partner-logo">
-                                <img src="assets/imgs/Golden KBC Empire Group Co.,Ltd.webp" alt="Golden KBC Empire Group Co.,Ltd">
-                                
-                            </div></a>
-                        </div>
-                        <div class="col-2">
-                          <a href="https://www.grandroyal-group.com/" target="_blank" aria-label="Grand Royal Group">
-                            <div class="partner-logo">
-                                <img src="assets/imgs/GRG.webp" alt="Grand Royal Whisky">
-                                
+                            <div class="col-2">
+                              <a href="https://www.crotontravel.com" target="_blank" rel="noopener noreferrer" aria-label="Croton Travel"><div class="partner-logo">
+                                    <img src="assets/imgs/Partners Logo/Croton logo PNG big size.webp" alt="Logo 2">
+                                    
+                                </div></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="https://goldsteelconstruction.com/ " target="_blank" rel="noopener noreferrer" aria-label="Gold Steel Construction">
+                                <div class="partner-logo">
+                                    <img src="assets/imgs/Golden KBC Empire Group Co.,Ltd.webp" alt="Golden KBC Empire Group Co.,Ltd">
+                                    
+                                </div></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="https://www.grandroyal-group.com/" target="_blank" aria-label="Grand Royal Group">
+                                <div class="partner-logo">
+                                    <img src="assets/imgs/GRG.webp" alt="Grand Royal Whisky">
+                                    
 
-                            </div></a>
-                        </div>
-                        <div class="col-2">
-                          <a href="https://www.zlann.com.mm" target="_blank" rel="noopener noreferrer" aria-label="Zlann Podcasts">
-                            <div class="partner-logo">
-                                <img src="assets/imgs/Zlann.webp" alt="Zlann Podcasts">
-                                
+                                </div></a>
+                            </div>
+                            <div class="col-2">
+                              <a href="https://www.zlann.com.mm" target="_blank" rel="noopener noreferrer" aria-label="Zlann Podcasts">
+                                <div class="partner-logo">
+                                    <img src="assets/imgs/Zlann.webp" alt="Zlann Podcasts">
+                                    
 
-                            </div></a>
+                                </div></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Slide 2 (6-10) -->
-            <div class="carousel-item">
-              <div class="container">
-                  <div class="row justify-content-center g-4">
-                      <div class="col-2">
-                        <a href="https://www.his-j.com" target="_blank" rel="noopener noreferrer" aria-label="HIS Travel Myanmar">
-                          <div class="partner-logo">
-                              <img src="assets/imgs/Partners Logo/HIS.png" alt="HIS Travel">
+                <div class="carousel-item">
+                  <div class="container">
+                      <div class="row justify-content-center g-4">
+                          <div class="col-2">
+                            <a href="https://www.his-j.com" target="_blank" rel="noopener noreferrer" aria-label="HIS Travel Myanmar">
+                              <div class="partner-logo">
+                                  <img src="assets/imgs/Partners Logo/HIS.png" alt="HIS Travel">
 
-                          </div></a>
-                      </div>
-                      <div class="col-2">
-                        <a href="https://www.kmd.edu.mm" target="_blank" rel="noopener noreferrer" aria-label="KMD Myanmar">
-                        <div class="partner-logo">
-                              <img src="assets/imgs/Partners Logo/KMD.jpeg" alt="KMD">
-                             
-
-                          </div> </a>
-                      </div>
-                      <div class="col-2">
-                        <a href="https://www.miradio.com.mm" target="_blank" rel="noopener noreferrer" aria-label="MI Radio Myanmar">
-                          <div class="partner-logo">
-                              <img src="assets/imgs/MI Radio.webp" alt="MI Radio Myanmar">
-                              
-                          </div></a>
-                      </div>
-                      <div class="col-2">
-                        <a href="https://www.tourmandalay.travel" target="_blank" rel="noopener noreferrer" aria-label="Tour Mandalay Travel and Tour">
-                          <div class="partner-logo">
-                              <img src="assets/imgs/Partners Logo/Tour Mandalay.jpeg" alt="Tour Mandalay Travel Tour">
-                              <a href="https://www.tourmandalay.travel" target="_blank" rel="noopener noreferrer">
-                          </div></a>
-                      </div>
-                      <div class="col-2">
-                        <a href="https://www.facebook.com/RachaChangEngine" target="_blank" rel="noopener noreferrer" aria-label="Racha Chang">
-                          <div class="partner-logo">
-                              <img src="assets/imgs/Partners Logo/Racha Chang.png" alt="Racha Chang Myanmar">
-                              
-                          </div></a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Slide 3 (11-15) -->
-          <div class="carousel-item">
-              <div class="container">
-                  <div class="row justify-content-center g-4">
-                      <div class="col-2">
-                        <a href="https://www.facebook.com/trpsoemyint/" target="_blank" rel="noopener noreferrer" aria-label="Tharaphu Soe Myint Group of Co.,Ltd">
-                          <div class="partner-logo">
-                              <img src="assets/imgs/Partners Logo/Tharaphu Soe Myint.jpeg" alt="Tharaphu Soe Myint Group of Co.,Ltd">
-                              
-
-
-                          </div></a>
-                      </div>
-                      <div class="col-2">
-                        <a href="https://www.facebook.com/profile.php?id=61557191326273" target="_blank" rel="noopener noreferrer" aria-label="Avatr Technology Car EV">
-                        <div class="partner-logo">
-                            
-                              <img src="assets/imgs/Avatr_Technology_Logo.webp" alt="Avatr Technology Car EV">
-                             
-
-                          </div></a>
-                      </div>
-                      <div class="col-2">
-                        <a href="https://locofast.com/" target="_blank" rel="noopener noreferrer" aria-label="Locofast Textile">
-                          <div class="partner-logo">
-                              <img src="assets/imgs/Partners Logo/Locofast.webp" alt="Locofast Textile">
-                               
-                          </div></a>
-                      </div>
-                      <div class="col-2">
-                        <a href="https://www.jiangnantextiles.com/" target="_blank" rel="noopener noreferrer" aria-label="Viscose Staple Fibre">
-                          <div class="partner-logo">
-                              <img src="assets/imgs/Partners Logo/Viscose Staple Fibre (VSF).webp" alt="Viscose Staple Fibre">
-                              
-                          </div></a>
-                      </div>
-                      <div class="col-2">
-                        <a href="https://www.ggear.com.kh/" target="_blank" rel="noopener noreferrer" aria-label="GGear Group">
-                          <div class="partner-logo">
-                              <img src="assets/imgs/Partners Logo/GGear-Group_.webp" alt="GGear Group">
-                              
-                          </div></a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Slide 4 (16-20) -->
-          <div class="carousel-item">
-              <div class="container">
-                  <div class="row justify-content-center g-4">
-                      <div class="col-2">
-                        <a href="https://www.facebook.com/profile.php?id=100088670024194" target="_blank" rel="noopener noreferrer" aria-label="Golden KBC Empire Group Co.,Ltd">
-                          <div class="partner-logo">
-                              <img src="assets/imgs/Gold Steel Construction.webp" alt="Golden KBC Empire Group Co.,Ltd">
-                              
-
-                          </div></a>
-                      </div>
-                      <div class="col-2">
-                          <div class="partner-logo">
-                              <img src="assets/imgs/Partners Logo/Avatr_Technology_Logo.png" alt="Avatr_Technology" 
-                              >
+                              </div></a>
                           </div>
-                      </div>
-                      <div class="col-2">
-                          <div class="partner-logo">
-                              <img src="assets/imgs/Partners Logo/Locofast.webp" alt="Locofast">
+                          <div class="col-2">
+                            <a href="https://www.kmd.edu.mm" target="_blank" rel="noopener noreferrer" aria-label="KMD Myanmar">
+                            <div class="partner-logo">
+                                  <img src="assets/imgs/Partners Logo/KMD.jpeg" alt="KMD">
+                                 
+
+                              </div> </a>
                           </div>
-                      </div>
-                      <div class="col-2">
-                          <div class="partner-logo">
-                              <img src="assets/imgs/Partners Logo/Viscose Staple Fibre (VSF).webp" alt="Viscose Staple Fibre">
+                          <div class="col-2">
+                            <a href="https://www.miradio.com.mm" target="_blank" rel="noopener noreferrer" aria-label="MI Radio Myanmar">
+                              <div class="partner-logo">
+                                  <img src="assets/imgs/MI Radio.webp" alt="MI Radio Myanmar">
+                                  
+                              </div></a>
                           </div>
-                      </div>
-                      <div class="col-2">
-                          <div class="partner-logo">
-                              <img src="assets/imgs/Partners Logo/GGear-Group_.webp" alt="GGear-Group">
+                          <div class="col-2">
+                            <a href="https://www.tourmandalay.travel" target="_blank" rel="noopener noreferrer" aria-label="Tour Mandalay Travel and Tour">
+                              <div class="partner-logo">
+                                  <img src="assets/imgs/Partners Logo/Tour Mandalay.jpeg" alt="Tour Mandalay Travel Tour">
+                                  <a href="https://www.tourmandalay.travel" target="_blank" rel="noopener noreferrer">
+                              </div></a>
+                          </div>
+                          <div class="col-2">
+                            <a href="https://www.facebook.com/RachaChangEngine" target="_blank" rel="noopener noreferrer" aria-label="Racha Chang">
+                              <div class="partner-logo">
+                                  <img src="assets/imgs/Partners Logo/Racha Chang.png" alt="Racha Chang Myanmar">
+                                  
+                              </div></a>
                           </div>
                       </div>
                   </div>
               </div>
-          </div>
 
-      </div>
+              <div class="carousel-item">
+                  <div class="container">
+                      <div class="row justify-content-center g-4">
+                          <div class="col-2">
+                            <a href="https://www.facebook.com/trpsoemyint/" target="_blank" rel="noopener noreferrer" aria-label="Tharaphu Soe Myint Group of Co.,Ltd">
+                              <div class="partner-logo">
+                                  <img src="assets/imgs/Partners Logo/Tharaphu Soe Myint.jpeg" alt="Tharaphu Soe Myint Group of Co.,Ltd">
+                                  
 
-         <!-- Navigation Buttons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#partnerCarousel" data-bs-slide="prev">
-      <span class="custom-carousel-icon">&lt;</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#partnerCarousel" data-bs-slide="next">
-      <span class="custom-carousel-icon">&gt;</span>
-  </button>
-</div>
 
-<style>
-.partner-logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 180px;
-  overflow: hidden;
-  padding: 5px;
-  margin: 10px auto;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.partner-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.partner-logo:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Transparent Background Navigation Buttons */
-.carousel-control-prev, .carousel-control-next {
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: none;
-  opacity: 0.9;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: all 0.3s ease;
-}
-
-.carousel-control-prev:hover, .carousel-control-next:hover {
-  opacity: 1;
-}
-
-.custom-carousel-icon {
-  font-size: 1.8rem;
-  color: #ED6E12;
-  font-weight: bold;
-}
-</style>
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-<!-- End Partners Section -->
-
-   <!-- Feedbacks Section -->
-<section id="feedbacks" class="section">
-  <div class="container text-center">
-    <h3 class="subtitle">Feedbacks</h3>
-    <h4 class="section-title mb-4">What People Say About Me</h4>
-    <p class="mb-5 pb-4">
-      "Discover what people say about me! Heartfelt testimonials and kind words from those I've worked with."
-      <br />
-      Let's create something amazing together!
-    </p>
-
-    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
-      <div class="carousel-inner">
-
-        <!-- Testimonial 1 -->
-        <div class="carousel-item active">
-          <div class="card testmonial-card border">
-            <div class="card-body text-center">
-              <img src="assets/imgs/Nang Hein Kham.webp" alt="Nang Hein Kham" />
-              <p>"Highly professional and cooperative, always delivers high-quality work."</p>
-              <h3 class="title">Nang Hein Kham</h3>
-              <h4 class="subtitle">HR Manager | Monnect Group of Co.,Ltd.</h4>
-              <div class="social-icons">
-                <a href="mailto:nangheinkham0468@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/lin-lin-1679b6132/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://monnectgroup.com.mm" target="_blank" aria-label="Website"><i class="fas fa-globe"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div class="carousel-item">
-          <div class="card testmonial-card border">
-            <div class="card-body text-center">
-              <img src="assets/imgs/Ye Lin Naing.webp" alt="Ye Lin Naing" />
-              <p>"An excellent communicator who builds strong client relationships, approaches work with enthusiasm."</p>
-              <h3 class="title">Ye Lin Naing</h3>
-              <h4 class="subtitle">Founder | Brand Diary Branding & Marketing Agency</h4>
-              <div class="social-icons">
-                <a href="mailto:yelinnaing027@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/ye-lin-naing-9abb2b22a/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://brand-diary.com" target="_blank" aria-label="Website"><i class="fas fa-globe"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="carousel-item">
-          <div class="card testmonial-card border">
-            <div class="card-body text-center">
-              <img src="assets/imgs/Phyo Thinzar Khine @ Ko Phyo.webp" alt="Phyo Thinzar Khine" />
-              <p>"Result-driven and advanced setup for ads tools is what he specializes in."</p>
-              <h3 class="title">Zark</h3>
-              <h4 class="subtitle">Account Director | Brand Diary Branding & Marketing Agency</h4>
-              <div class="social-icons">
-                <a href="mailto:kophyothatoega@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/phyothinzar-khine-zark-547343155/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://brand-diary.com" target="_blank" aria-label="Website"><i class="fas fa-globe"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 4 -->
-        <div class="carousel-item">
-          <div class="card testmonial-card border">
-            <div class="card-body text-center">
-              <img src="assets/imgs/Aung Chan Min.webp" alt="Aung Chan Min" />
-              <p>"A skilled social media marketer who excels at strategy and engagement."</p>
-              <h3 class="title">Aung Chan Min</h3>
-              <h4 class="subtitle">Managing Director | Golden KBC Empire Construction Co.,Ltd.</h4>
-              <div class="social-icons">
-                <a href="mailto:aungchan.min@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/aung-chan-min-860518149/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100088670024194" target="_blank" aria-label="Facebook"><i class="fas fa-globe"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Carousel Indicators (outside the cards) -->
-      <ol class="carousel-indicators mt-4">
-        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
-        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
-        <li data-target="#testimonialCarousel" data-slide-to="3"></li>
-      </ol>
-    </div>
-  </div>
-</section>
-
-<!-- Styles -->
-<style>
-  .testmonial-card {
-    max-width: 600px;
-    margin: 0 auto;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    border: none !important;
-    padding-bottom: 20px;
-  }
-
-  .testmonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  }
-
-  .card-body img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #FF7457;
-    margin-bottom: 15px;
-  }
-
-  .card-body p {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 20px;
-  }
-
-  .title {
-    color: #333;
-    font-weight: 600;
-    margin-bottom: 5px;
-  }
-
-  .subtitle {
-    color: #777;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-  }
-
-  .social-icons {
-    margin-top: 10px;
-  }
-
-  .social-icons a {
-    display: inline-block;
-    margin: 0 6px;
-    font-size: 18px;
-    color: #FF7457;
-    transition: all 0.3s ease;
-  }
-
-  .social-icons a:hover {
-    color: #e05d40;
-    transform: translateY(-3px);
-  }
-
-  .carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin: 0 4px;
-    cursor: pointer;
-  }
-
-  .carousel-indicators .active {
-    background-color: #FF7457;
-  }
-</style>
-
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/fc521c6581.js" crossorigin="anonymous"></script>
-
-   <!-- experience Section -->
-   <section id="experience" class="experience">
-  <div class="section">
-    <div class="container text-center">
-      <h4 class="subtitle-exp">Working Experience</h4>
-      <div class="container">
-          <div class="row">
-              <!-- LNW Technology -->
-              <div class="col-md-3">
-                  <div class="experience-card shadow-sm overlay-effect">
-                      <div class="card-body text-center">
-                          <div class="d-flex flex-column align-items-center">
-                              <img src="assets/imgs/LWN Co.,Ltd.jpg" class="company-logo" alt="LNW Technology">
-                              <a href="https://www.maukerja.my/en/company/lnw-technology-co-ltd" class="company-link fw-bold">LNW Technology Co.,Ltd</a>
+                              </div></a>
                           </div>
-                          <div class="job-details">
-                              <div class="card-title fw-bolder">Head of Digital Marketing</div>
-                              <div class="location text-blue" style="color: #333333 ">
-                                  <i class="fas fa-map-marker-alt text-blue" style="color:#333333 ;"></i> Phnom Penh, Cambodia
+                          <div class="col-2">
+                            <a href="https://www.facebook.com/profile.php?id=61557191326273" target="_blank" rel="noopener noreferrer" aria-label="Avatr Technology Car EV">
+                            <div class="partner-logo">
+                                
+                                  <img src="assets/imgs/Avatr_Technology_Logo.webp" alt="Avatr Technology Car EV">
+                                 
+
+                              </div></a>
+                          </div>
+                          <div class="col-2">
+                            <a href="https://locofast.com/" target="_blank" rel="noopener noreferrer" aria-label="Locofast Textile">
+                              <div class="partner-logo">
+                                  <img src="assets/imgs/Partners Logo/Locofast.webp" alt="Locofast Textile">
+                                   
+                              </div></a>
+                          </div>
+                          <div class="col-2">
+                            <a href="https://www.jiangnantextiles.com/" target="_blank" rel="noopener noreferrer" aria-label="Viscose Staple Fibre">
+                              <div class="partner-logo">
+                                  <img src="assets/imgs/Partners Logo/Viscose Staple Fibre (VSF).webp" alt="Viscose Staple Fibre">
+                                  
+                              </div></a>
+                          </div>
+                          <div class="col-2">
+                            <a href="https://www.ggear.com.kh/" target="_blank" rel="noopener noreferrer" aria-label="GGear Group">
+                              <div class="partner-logo">
+                                  <img src="assets/imgs/Partners Logo/GGear-Group_.webp" alt="GGear Group">
+                                  
+                              </div></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                  <div class="container">
+                      <div class="row justify-content-center g-4">
+                          <div class="col-2">
+                            <a href="https://www.facebook.com/profile.php?id=100088670024194" target="_blank" rel="noopener noreferrer" aria-label="Golden KBC Empire Group Co.,Ltd">
+                              <div class="partner-logo">
+                                  <img src="assets/imgs/Gold Steel Construction.webp" alt="Golden KBC Empire Group Co.,Ltd">
+                                  
+
+                              </div></a>
+                          </div>
+                          <div class="col-2">
+                              <div class="partner-logo">
+                                  <img src="assets/imgs/Partners Logo/Avatr_Technology_Logo.png" alt="Avatr_Technology" 
+                                  >
                               </div>
                           </div>
-                          <div class="year fw-bold">( Mar 2024 - Present ) On Site</div>
-                          <ul class="job-description">
-                              <li>Develop marketing strategy to increase brand awareness and lead.</li>
-                              <li>Manage marketing budget and allocate resources to achieve business goals.</li>
-                              <li>Stay updated with marketing tech trends to keep developments in digital marketing.</li>
-                              <li>Plan and execute buying strategies across channels, such as Meta Ads , PPC ,SEM & programmatic ads.</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Monnect Group -->
-              <div class="col-md-3">
-                  <div class="experience-card shadow-sm overlay-effect">
-                      <div class="card-body text-center">
-                          <div class="d-flex flex-column align-items-center">
-                              <img src="assets/imgs/MonnectGroupofCo.Lt.webp" class="company-logo" alt="Monnect Group">
-                              <a href="https://monnectgroup.com.mm" class="company-link fw-bold">Monnect Group Co.,Ltd</a>
-                          </div>
-                          <div class="job-details">
-                              <div class="card-title fw-bolder">Digital Marketing Manager</div>
-                              <div class="location text-blue" style="color: #333333 " >
-                                  <i class="fas fa-map-marker-alt text-blue"style="color: #333333 "></i> Yangon, Myanmar
+                          <div class="col-2">
+                              <div class="partner-logo">
+                                  <img src="assets/imgs/Partners Logo/Locofast.webp" alt="Locofast">
                               </div>
                           </div>
-                          <div class="year fw-bold">( Jan 2024 - Present ) Remote</div>
-                          <ul class="job-description">
-                              <li>Design and implement marketing strategies to align with company goals.</li>
-                              <li>Oversee the creation and distribution engaging content various platforms.</li>
-                              <li>Lead social media strategy, including content planning,and audience community engagement </li>
-                              <li>Plan and allocate the digital marketing budget effectively to maximize ROI.</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Brand Diary -->
-              <div class="col-md-3">
-                  <div class="experience-card shadow-sm overlay-effect">
-                      <div class="card-body text-center">
-                          <div class="d-flex flex-column align-items-center">
-                              <img src="assets/imgs/Brand Diary Branding and Marketing Agency.webp" class="company-logo" alt="Brand Diary">
-                              <a href="https://brand-diary.com" class="company-link fw-bold" >Brand Diary Agency</a>
-                          </div>
-                          <div class="job-details">
-                              <div class="card-title fw-bolder">Key Account Project Manager</div>
-                              <div class="location text-blue" style="color:#333333 ;">
-                                  <i class="fas fa-map-marker-alt text-blue"style="color:#333333 ;"></i> Bangkok, Thailand
+                          <div class="col-2">
+                              <div class="partner-logo">
+                                  <img src="assets/imgs/Partners Logo/Viscose Staple Fibre (VSF).webp" alt="Viscose Staple Fibre">
                               </div>
                           </div>
-                          <div class="year fw-bold">( 2024 Dec - Present ) Freelance</div>
-                          <ul class="job-description">
-                            <li>Manage client relationships, ensuring smooth communication and long-term success.</li>
-                            <li>Oversee daily operations, keeping projects on track results.</li>
-                            <li>Lead project execution, coordinating between teams and workflows.</li>
-                            <li>Develop strategies to improve effi ciency and maximize client satisfaction.</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Billionaire Minds -->
-              <div class="col-md-3">
-                  <div class="experience-card shadow-sm overlay-effect">
-                      <div class="card-body text-center">
-                          <div class="d-flex flex-column align-items-center">
-                              <img src="assets/imgs/BMG Group Co.,Ltd.webp" class="company-logo" alt="Billionaire Minds">
-                              <a href="https://bmggroupmm.com/" class="company-link fw-bold">Billionaire Minds Group</a>
-                          </div>
-                          <div class="job-details">
-                              <div class="card-title fw-bolder">Key Account Manager</div>
-                              <div class="location text-blue" style="color:#333333 ;">
-                                  <i class="fas fa-map-marker-alt text-blue"style="color:#333333 ;"></i> Yangon, Myanmar
+                          <div class="col-2">
+                              <div class="partner-logo">
+                                  <img src="assets/imgs/Partners Logo/GGear-Group_.webp" alt="GGear-Group">
                               </div>
                           </div>
-                          <div class="year fw-bold">( Jan 2019 - July 2023 ) On Site</div>
-                          <ul class="job-description">
-                              <li>Lead and manage key client accounts, ensuring long-term success and growth.</li>
-                              <li>Build strong relationships with clients, understanding their goals and challenges.</li>
-                              <li>Develop strategic plans to improve campaign performance and ROI.</li>
-                              <li>Oversee project execution, ensuring quality, deadlines, and budgets are met.</li>
-                          </ul>
                       </div>
                   </div>
               </div>
 
           </div>
-      </div>
-  </div>
 
-  <style>
-      .subtitle-exp {
-          font-size: 25px;
-          color: #333;
-          margin-bottom: 10px;
-          font-weight: bold;
-          text-transform: uppercase;
-      }
+            <button class="carousel-control-prev" type="button" data-bs-target="#partnerCarousel" data-bs-slide="prev">
+              <span class="custom-carousel-icon"><</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#partnerCarousel" data-bs-slide="next">
+              <span class="custom-carousel-icon">></span>
+          </button>
+        </div>
 
-      .experience-card {
-          padding: 20px;
-          border-radius: 10px;
-          transition: all 0.3s ease;
-      }
-
-      .experience-card:hover {
-          background: rgba(0, 0, 0, 0.05);
-          transform: translateY(-3px);
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-      }
-
-      .company-logo {
-          height: 40px;
-          width: 40px;
-          object-fit: contain;
-          margin-bottom: 10px;
-      }
-
-      .company-link {
-          display: block;
-          font-size: 14px;
-          color: #000;
-          text-decoration: none;
-          margin-bottom: 10px;
-      }
-
-      .job-details {
-          max-height: 3.6em; /* Restricts to 2 lines */
+        <style>
+        .partner-logo {
+          width: 100px;
+          height: 100px;
+          border-radius: 180px;
           overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-      }
+          padding: 5px;
+          margin: 10px auto;
+          transition: transform 0.1s ease, box-shadow 0.1s ease;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
 
-      .card-title {
-          font-size: 12px;
+        .partner-logo img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .partner-logo:hover {
+          transform: scale(1.1);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Transparent Background Navigation Buttons */
+        .carousel-control-prev, .carousel-control-next {
+          width: 40px;
+          height: 40px;
+          background: transparent;
+          border: none;
+          opacity: 0.9;
+          top: 50%;
+          transform: translateY(-50%);
+          transition: all 0.3s ease;
+        }
+
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+          opacity: 1;
+        }
+
+        .custom-carousel-icon {
+          font-size: 1.8rem;
+          color: #ED6E12;
           font-weight: bold;
+        }
+        </style>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    </section>
+
+    <section id="feedbacks" class="section">
+      <div class="container text-center">
+        <h3 class="subtitle">Feedbacks</h3>
+        <h4 class="section-title mb-4">What People Say About Me</h4>
+        <p class="mb-5 pb-4">
+          "Discover what people say about me! Heartfelt testimonials and kind words from those I've worked with."
+          <br />
+          Let's create something amazing together!
+        </p>
+
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="card testmonial-card border">
+                <div class="card-body text-center">
+                  <img src="assets/imgs/Nang Hein Kham.webp" alt="Nang Hein Kham" />
+                  <p>"Highly professional and cooperative, always delivers high-quality work."</p>
+                  <h3 class="title">Nang Hein Kham</h3>
+                  <h4 class="subtitle">HR Manager | Monnect Group of Co.,Ltd.</h4>
+                  <div class="social-icons">
+                    <a href="mailto:nangheinkham0468@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/lin-lin-1679b6132/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://monnectgroup.com.mm" target="_blank" aria-label="Website"><i class="fas fa-globe"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card testmonial-card border">
+                <div class="card-body text-center">
+                  <img src="assets/imgs/Ye Lin Naing.webp" alt="Ye Lin Naing" />
+                  <p>"An excellent communicator who builds strong client relationships, approaches work with enthusiasm."</p>
+                  <h3 class="title">Ye Lin Naing</h3>
+                  <h4 class="subtitle">Founder | Brand Diary Branding & Marketing Agency</h4>
+                  <div class="social-icons">
+                    <a href="mailto:yelinnaing027@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/ye-lin-naing-9abb2b22a/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://brand-diary.com" target="_blank" aria-label="Website"><i class="fas fa-globe"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card testmonial-card border">
+                <div class="card-body text-center">
+                  <img src="assets/imgs/Phyo Thinzar Khine @ Ko Phyo.webp" alt="Phyo Thinzar Khine" />
+                  <p>"Result-driven and advanced setup for ads tools is what he specializes in."</p>
+                  <h3 class="title">Zark</h3>
+                  <h4 class="subtitle">Account Director | Brand Diary Branding & Marketing Agency</h4>
+                  <div class="social-icons">
+                    <a href="mailto:kophyothatoega@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/phyothinzar-khine-zark-547343155/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://brand-diary.com" target="_blank" aria-label="Website"><i class="fas fa-globe"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="card testmonial-card border">
+                <div class="card-body text-center">
+                  <img src="assets/imgs/Aung Chan Min.webp" alt="Aung Chan Min" />
+                  <p>"A skilled social media marketer who excels at strategy and engagement."</p>
+                  <h3 class="title">Aung Chan Min</h3>
+                  <h4 class="subtitle">Managing Director | Golden KBC Empire Construction Co.,Ltd.</h4>
+                  <div class="social-icons">
+                    <a href="mailto:aungchan.min@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/aung-chan-min-860518149/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100088670024194" target="_blank" aria-label="Facebook"><i class="fas fa-globe"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ol class="carousel-indicators mt-4">
+            <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+            <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+            <li data-target="#testimonialCarousel" data-slide-to="3"></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .testmonial-card {
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        border: none !important;
+        padding-bottom: 20px;
       }
 
-      .location {
-          font-size: 14px;
-          color: #007bff;
+      .testmonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
       }
 
-      .year {
-          font-size: 12px;
-          margin: 5px 0;
-          color: #666;
+      .card-body img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #FF7457;
+        margin-bottom: 15px;
       }
 
-      .job-description {
-          text-align: justify;
-          font-size: 14px;
-          margin-top: 10px;
-          padding-left: 0;
-          list-style-position: outside;
+      .card-body p {
+        font-style: italic;
+        color: #555;
+        margin-bottom: 20px;
       }
 
-      .job-description li {
-          margin-bottom: 5px;
+      .title {
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 5px;
       }
-  </style>
-</div>
+
+      .subtitle {
+        color: #777;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        display: inline-block;
+        margin: 0 6px;
+        font-size: 18px;
+        color: #FF7457;
+        transition: all 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #e05d40;
+        transform: translateY(-3px);
+      }
+
+      .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ccc;
+        margin: 0 4px;
+        cursor: pointer;
+      }
+
+      .carousel-indicators .active {
+        background-color: #FF7457;
+      }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/fc521c6581.js" crossorigin="anonymous"></script>
+
+      <section id="experience" class="experience">
+      <div class="section">
+        <div class="container text-center">
+          <h4 class="subtitle-exp">Working Experience</h4>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="experience-card shadow-sm overlay-effect">
+                          <div class="card-body text-center">
+                              <div class="d-flex flex-column align-items-center">
+                                  <img src="assets/imgs/LWN Co.,Ltd.jpg" class="company-logo" alt="LNW Technology">
+                                  <a href="https://www.maukerja.my/en/company/lnw-technology-co-ltd" class="company-link fw-bold">LNW Technology Co.,Ltd</a>
+                              </div>
+                              <div class="job-details">
+                                  <div class="card-title fw-bolder">Head of Digital</div>
+                                  <div class="location text-blue" style="color: #333333 ">
+                                      <i class="fas fa-map-marker-alt text-blue" style="color:#333333 ;"></i> Phnom Penh, Cambodia
+                                  </div>
+                              </div>
+                              <div class="year fw-bold">( Mar 2024 - Present ) On Site</div>
+                              <ul class="job-description">
+                                  <li>Develop marketing strategy to increase brand awareness and lead.</li>
+                                  <li>Manage marketing budget and allocate resources to achieve business goals.</li>
+                                  <li>Stay updated with marketing tech trends to keep developments in digital marketing.</li>
+                                  <li>Plan and execute buying strategies across channels, such as Meta Ads , PPC ,SEM & programmatic ads.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-3">
+                      <div class="experience-card shadow-sm overlay-effect">
+                          <div class="card-body text-center">
+                              <div class="d-flex flex-column align-items-center">
+                                  <img src="assets/imgs/MonnectGroupofCo.Lt.webp" class="company-logo" alt="Monnect Group">
+                                  <a href="https://monnectgroup.com.mm" class="company-link fw-bold">Monnect Group Co.,Ltd</a>
+                              </div>
+                              <div class="job-details">
+                                  <div class="card-title fw-bolder">Digital Marketing Manager</div>
+                                  <div class="location text-blue" style="color: #333333 " >
+                                      <i class="fas fa-map-marker-alt text-blue"style="color: #333333 "></i> Yangon, Myanmar
+                                  </div>
+                              </div>
+                              <div class="year fw-bold">( Jan 2024 - Present ) Remote</div>
+                              <ul class="job-description">
+                                  <li>Design and implement marketing strategies to align with company goals.</li>
+                                  <li>Oversee the creation and distribution engaging content various platforms.</li>
+                                  <li>Lead social media strategy, including content planning,and audience community engagement </li>
+                                  <li>Plan and allocate the digital marketing budget effectively to maximize ROI.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-3">
+                      <div class="experience-card shadow-sm overlay-effect">
+                          <div class="card-body text-center">
+                              <div class="d-flex flex-column align-items-center">
+                                  <img src="assets/imgs/Brand Diary Branding and Marketing Agency.webp" class="company-logo" alt="Brand Diary">
+                                  <a href="https://brand-diary.com" class="company-link fw-bold" >Brand Diary Agency</a>
+                              </div>
+                              <div class="job-details">
+                                  <div class="card-title fw-bolder">Key Account Project Manager</div>
+                                  <div class="location text-blue" style="color:#333333 ;">
+                                      <i class="fas fa-map-marker-alt text-blue"style="color:#333333 ;"></i> Bangkok, Thailand
+                                  </div>
+                              </div>
+                              <div class="year fw-bold">( 2024 Dec - Present ) Freelance</div>
+                              <ul class="job-description">
+                                <li>Manage client relationships, ensuring smooth communication and long-term success.</li>
+                                <li>Oversee daily operations, keeping projects on track results.</li>
+                                <li>Lead project execution, coordinating between teams and workflows.</li>
+                                <li>Develop strategies to improve effi ciency and maximize client satisfaction.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-3">
+                      <div class="experience-card shadow-sm overlay-effect">
+                          <div class="card-body text-center">
+                              <div class="d-flex flex-column align-items-center">
+                                  <img src="assets/imgs/BMG Group Co.,Ltd.webp" class="company-logo" alt="Billionaire Minds">
+                                  <a href="https://bmggroupmm.com/" class="company-link fw-bold">Billionaire Minds Group</a>
+                              </div>
+                              <div class="job-details">
+                                  <div class="card-title fw-bolder">Key Account Manager</div>
+                                  <div class="location text-blue" style="color:#333333 ;">
+                                      <i class="fas fa-map-marker-alt text-blue"style="color:#333333 ;"></i> Yangon, Myanmar
+                                  </div>
+                              </div>
+                              <div class="year fw-bold">( Jan 2019 - July 2023 ) On Site</div>
+                              <ul class="job-description">
+                                  <li>Lead and manage key client accounts, ensuring long-term success and growth.</li>
+                                  <li>Build strong relationships with clients, understanding their goals and challenges.</li>
+                                  <li>Develop strategic plans to improve campaign performance and ROI.</li>
+                                  <li>Oversee project execution, ensuring quality, deadlines, and budgets are met.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+      <style>
+          .subtitle-exp {
+              font-size: 25px;
+              color: #333;
+              margin-bottom: 10px;
+              font-weight: bold;
+              text-transform: uppercase;
+          }
+
+          .experience-card {
+              padding: 20px;
+              border-radius: 10px;
+              transition: all 0.3s ease;
+          }
+
+          .experience-card:hover {
+              background: rgba(0, 0, 0, 0.05);
+              transform: translateY(-3px);
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+          }
+
+          .company-logo {
+              height: 40px;
+              width: 40px;
+              object-fit: contain;
+              margin-bottom: 10px;
+          }
+
+          .company-link {
+              display: block;
+              font-size: 14px;
+              color: #000;
+              text-decoration: none;
+              margin-bottom: 10px;
+          }
+
+          .job-details {
+              max-height: 3.6em; /* Restricts to 2 lines */
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+          }
+
+          .card-title {
+              font-size: 12px;
+              font-weight: bold;
+          }
+
+          .location {
+              font-size: 14px;
+              color: #007bff;
+          }
+
+          .year {
+              font-size: 12px;
+              margin: 5px 0;
+              color: #666;
+          }
+
+          .job-description {
+              text-align: justify;
+              font-size: 14px;
+              margin-top: 10px;
+              padding-left: 0;
+              list-style-position: outside;
+          }
+
+          .job-description li {
+              margin-bottom: 5px;
+          }
+      </style>
+    </section>
 
     
     
     
     
 
-    <!-- Hire me section -->
     <section class="bg-gray p-0 section">
       <div class="container">
         <div class="card bg-primary">
@@ -1320,9 +1411,6 @@
         </div>
       </div>
     </section>
-    <!-- End od Hire me section. -->
-
-    <!-- Contact Section -->
     <section id="contact" class="position-relative section">
       <div class="container">
         <div class="text-center">
@@ -1335,8 +1423,7 @@
           </p>
         </div>
     
-        <div class="row align-items-stretch"> <!-- Ensure equal height for both columns -->
-          <div class="col-md-6">
+        <div class="row align-items-stretch"> <div class="col-md-6">
             <div class="contact text-left h-100" style="height: 700px;">
               <div class="form h-100 d-flex flex-column justify-content-between">
                 <div>
@@ -1413,16 +1500,12 @@
             });
           </script>
     
-          <!-- Right Side: Contact Info, GIF, and Map -->
           <div class="col-md-6">
-            <div class="contact-infos h-100 d-flex flex-column justify-content-between" style="height: 700px;"> <!-- Set height to 700px -->
-              <!-- Contact Info -->
-              <div class="text-left"> <!-- Align text to the left -->
-                <div class="item hover-effect">
+            <div class="contact-infos h-100 d-flex flex-column justify-content-between" style="height: 700px;"> <div class="text-left"> <div class="item hover-effect">
                   <i class="ti-location-pin"></i>
                   <div>
                     <h5>Location</h5>
-                    <p>12345 Fake ST NoWhere AB Country</p>
+                    <p>Room 522, Zhuo Yufeng Property, Street 03, Phnom Penh</p>
                   </div>
                 </div>
                 <div class="item hover-effect">
@@ -1442,7 +1525,6 @@
               </div>
     
     
-              <!-- Google Map -->
               <div id="map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.0448135041424!2d104.91584457587469!3d11.548643144473981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513816bbbf87%3A0xf9280ed44f29c604!2sHtoo%20Htet%20Aung%20%7C%20Full%20Stack%20Digital%20Marketer!5e0!3m2!1sen!2skh!4v1746687169982!5m2!1sen!2skh" width="600" height="450" 
@@ -1452,8 +1534,8 @@
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade" 
                   title="Htoo Htet Aung's Home Map"
-  aria-label="Google Maps location"
-  >
+                  aria-label="Google Maps location"
+                >
                 </iframe>
 
                 
@@ -1464,7 +1546,6 @@
       </div>
     </section>
     
-    <!-- Add Custom CSS for Hover Effects and Layout -->
     <style>
       /* Ensure equal height for both columns */
       .row.align-items-stretch {
@@ -1503,93 +1584,183 @@
       }
     
     </style>
-    <!-- End of Contact Section -->
-<!-- Begin: HubSpot Academy - Social Media Marketing Badge -->
-<div class='academy-badge'>
-  <a href='https://app.hubspot.com/academy/achievements/g8837n3z/en/1/htoo-htet-aung/social-media-marketing' target="_blank" rel="noopener noreferrer" title='Social Media Marketing'> 
-  <img src='https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/72301af4376748c3a56700e922ccf003.png' alt="HubSpot Social Media Marketing"/>
-  </a>
-  </div>
-  <!-- End: HubSpot Academy - Social Media Marketing Badge -->
+<!-- ✅ My Certifications Section (2-row Swipe) -->
+<section class="certifications-section" style="margin-top: 10px;">
+  <h2 style="font-size: 36px; font-weight: 600; margin-bottom: 15px; color:#333;">My Certifications</h2>
 
-  <!-- Begin: HubSpot Academy - Digital Marketing  Badge -->
-<div class='academy-badge'>
-  <a href='https://app.hubspot.com/academy/achievements/139c13pc/en/1/htoo-htet-aung/digital-marketing' title='Digital Marketing '>
-  <img src='https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/ab70fa16f8b7491db87dcfa7ea5abd95.png' alt="digital-marketing Certificate" />
-  </a>
-  </div>
-  <!-- End: HubSpot Academy - Digital Marketing  Badge -->
-
-  <!-- Begin: HubSpot Academy - SEO Badge -->
-<div class='academy-badge'>
-  <a href='https://app.hubspot.com/academy/achievements/9gy13q2t/en/1/htoo-htet-aung/seo' title='SEO'>
-  <img src='https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/9375c3c415d34c40b1c49a275057fc98.png' alt="SEO Certificate" />
-  </a>
-  </div>
-  <!-- End: HubSpot Academy - SEO Badge -->
-  
-  <!-- Begin: European International University - MBA Badge -->
-<div class='academy-badge'>
-  <a href='/assets/imgs/Certificate/Htoo Htet Aung- European International University - MBA.pdf' title='MBA' target="_blank">
-  <img src='https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/9375c3c415d34c40b1c49a275057fc98.png' alt="MBA Certificate"/>
-  </a>
-  </div>
-  <!-- End: HubSpot Academy - SEO Badge -->
-
-    <!-- Page Footer -->
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-sm-6" style="color: #EF3E10;">
-            <p>
-              Copyright
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              &copy;
-              <a href="http://www.htoohtetaung.com" target="_blank" rel="noopener noreferrer" style="color: #EF3E10;">Htoo Htet Aung</a>
-            </p>
-          </div>
-          <div class="col-sm-6">
-            <div class="socials">
-              <a
-                href="https://www.facebook.com/htoohtetaung.15/"
-                class="social-item" 
-                target="_blank" rel="noopener noreferrer" aria-label="Htoo Htet Aung on Facebook"
-              >
-                <i class="ti-facebook"></i>
-              </a>
-              <a
-                class="social-item"
-                href="mailto:htoohtetaung.officially@gmail.com"
-                target="_blank" rel="noopener noreferrer" aria-label="Htoo Htet Aung on Gmail"
-              >
-                <i class="ti-google"></i>
-              </a>
-              <a
-                class="social-item"
-              >
-                <i class="ti-mobile"></i>
-              </a>
-              <a
-                class="social-item"
-                href="https://www.linkedin.com/in/htoohtetaung/" aria-label="Htoo Htet Aung on Likedin"
-              >
-                <i class="ti-link"></i>
-              </a>
-            </div>
-          </div>
+  <div class="certifications-carousel-wrapper">
+    <div class="certifications-carousel">
+      <!-- ✅ Row 1 -->
+      <div class="certification-slide">
+        <div class="certification-item">
+          <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/72301af4376748c3a56700e922ccf003.png" alt="Social Media Marketing" />
+          <div class="certification-text">Social Media Marketing</div>
+        </div>
+        <div class="certification-item">
+          <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/ab70fa16f8b7491db87dcfa7ea5abd95.png" alt="Digital Marketing" />
+          <div class="certification-text">Digital Marketing</div>
+        </div>
+        <div class="certification-item">
+          <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/9375c3c415d34c40b1c49a275057fc98.png" alt="SEO Certification" />
+          <div class="certification-text">SEO Certification</div>
+        </div>
+        <div class="certification-item">
+          <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/9375c3c415d34c40b1c49a275057fc98.png" alt="MBA in Sales & Marketing" />
+          <div class="certification-text">MBA in Sales & Marketing</div>
         </div>
       </div>
-    </footer>
 
-    <!-- core  -->
-        <!-- bootstrap 3 affix -->
+      <!-- ✅ Row 2 -->
+      <div class="certification-slide">
+        <div class="certification-item">
+          <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/72301af4376748c3a56700e922ccf003.png" alt="Advanced Strategy" />
+          <div class="certification-text">Advanced Strategy</div>
+        </div>
+        <div class="certification-item">
+          <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/ab70fa16f8b7491db87dcfa7ea5abd95.png" alt="Media Buying Pro" />
+          <div class="certification-text">Media Buying Pro</div>
+        </div>
+        <div class="certification-item">
+          <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/9375c3c415d34c40b1c49a275057fc98.png" alt="Content Mastery" />
+          <div class="certification-text">Content Mastery</div>
+        </div>
+        <div class="certification-item">
+          <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/72301af4376748c3a56700e922ccf003.png" alt="Analytics Expert" />
+          <div class="certification-text">Analytics Expert</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .certifications-carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  .certifications-carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+
+  .certification-slide {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* spacing between certificates */
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .certification-item {
+    text-align: center;
+    flex: 0 0 auto;
+  }
+
+  .certification-item img {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8faff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+  }
+
+  .certification-item img:hover {
+    transform: translateY(-5px);
+  }
+
+  .certification-text {
+    font-size: 15px;
+    color: #555;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 1.4;
+    text-align: center;
+    transition: color 0.5s ease;
+  }
+
+  .certification-text:hover {
+    color: #ff6600;
+  }
+</style>
+
+<script>
+  // ✅ Auto Swipe Logic: Show Row1 then Row2 alternately
+  document.addEventListener("DOMContentLoaded", function() {
+    const carousel = document.querySelector('.certifications-carousel');
+    const slides = document.querySelectorAll('.certification-slide');
+    let currentIndex = 0;
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      const offset = -(currentIndex * 100);
+      carousel.style.transform = `translateX(${offset}%)`;
+    }, 10000); // every 10 sec
+  });
+</script>
+
+<!-- Footer Section -->
+<footer class="footer-section" style="font-family: 'Helvetica Neue', Arial, sans-serif; font-size:14px; color:#555; position: relative; background-color: #f0f8ff;">
+  <!-- Background Image with Opacity -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('/assets/imgs/Footer Background.jpg'); background-size: cover; background-position: center; opacity: 0.5; z-index: 0;"></div>
+  
+  <div class="footer-container" style="align-items:flex-start; position: relative; z-index: 1;">
+    
+    <div class="footer-col">
+        <h3 style="font-size:20px; font-weight:600; margin-bottom:10px; color:#333;">Htoo Htet Aung</h3>
+        <p style="line-height:1.6;">
+            A Full Stack Digital Marketer with 7+ years of experience across 5 Asian countries, helping their brand online presence.
+        </p>
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/htoohtetaung.15/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="ti-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/htoohtetaung/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ti-link"></i></a>
+            <a href="mailto:htoohtetaung.officially@gmail.com" aria-label="Email"><i class="ti-email"></i></a>
+            <a href="tel:+85510232513" aria-label="Call"><i class="ti-mobile"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-col">
+        <h4 style="font-size:16px; font-weight:600; color:#333;">Quick Links</h4>
+        <div><a href="/" style="color:#555;">Home</a></div>
+        <div><a href="#about" style="color:#555;">About</a></div>
+        <div><a href="#service" style="color:#555;">Service</a></div>
+        <div><a href="#contact" style="color:#555;">Contact</a></div>
+    </div>
+
+    <div class="footer-col">
+        <h4 style="font-size:16px; font-weight:600; color:#333;">Get In Touch</h4>
+        <div class="footer-contact-info">
+            <div><a href="mailto:htoohtetaung.officially@gmail.com"><i class="ti-email"></i> htoohtetaung.officially@gmail.com</a></div>
+            <div><i class="ti-mobile"></i> (+855) 102-325-13</div>
+            <div><i class="ti-location-pin"></i> Phnom Penh, Cambodia</div>
+        </div>
+    </div>
+    
+  </div>
+
+  <div class="footer-bottom" style="justify-content:space-between; align-items:center; position: relative; z-index: 1;">
+      <p>
+        © 2025 
+        <a href="https://htoohtetaung.com" target="_blank" style="color:#555; text-decoration:none;">Htoo Htet Aung</a>. 
+        All Rights Reserved.
+      </p>
+      <div style="display:flex; gap:20px;">
+          <a href="#" style="color: #555;">Privacy Policy</a>
+          <a href="#" style="color: #555;">Terms of Service</a>
+      </div>
+  </div>
+</footer>
+
+
+
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- steller js -->
-     
-    <script src="assets/js/steller.js"></script> 
-
+    <script src="assets/js/steller.js"></script>
+    <script src="https://kit.fontawesome.com/fc521c6581.js" crossorigin="anonymous"></script> 
   </body>
 </html>
